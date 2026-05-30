@@ -44,10 +44,10 @@ export function Header() {
 
       <header
         className={cn(
-          "sticky top-0 z-50 transition-all duration-300",
+          "sticky top-0 z-50 border-b transition-all duration-300",
           scrolled
-            ? "glass-light shadow-card supports-[backdrop-filter]:bg-background/70"
-            : "bg-background/95 md:bg-transparent",
+            ? "glass-light border-border/60 shadow-card"
+            : "border-transparent bg-background/85 backdrop-blur-sm",
         )}
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3.5">
