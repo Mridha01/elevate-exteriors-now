@@ -22,7 +22,7 @@ export function ServicesSection() {
                 className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card p-6 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-primary/40 hover:shadow-glow"
               >
                 <span className="pointer-events-none absolute -right-8 -top-8 size-24 rounded-full bg-primary/5 transition-transform duration-500 group-hover:scale-150" />
-                <span className="relative flex size-13 w-13 items-center justify-center rounded-xl bg-gradient-primary text-primary-foreground shadow-glow">
+                <span className="relative flex size-12 items-center justify-center rounded-xl bg-gradient-primary text-primary-foreground shadow-glow">
                   <service.icon className="size-6" />
                 </span>
                 <h3 className="relative mt-5 font-display text-lg font-700 text-foreground">{service.title}</h3>
