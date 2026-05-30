@@ -11,6 +11,9 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
+import { FloatingActions } from "@/components/layout/FloatingActions";
 
 function NotFoundComponent() {
   return (
@@ -77,19 +80,54 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Precision Roofing & Exteriors | Roofing, Siding & Gutters" },
+      {
+        name: "description",
+        content:
+          "Premium roofing, siding, gutters, windows and exterior solutions built to last. Licensed, insured, financing available. Get your free estimate today.",
+      },
+      { name: "author", content: "Precision Roofing and Exteriors LLC" },
+      { name: "theme-color", content: "#d23b32" },
+      { property: "og:title", content: "Precision Roofing & Exteriors" },
+      {
+        property: "og:description",
+        content: "Trusted roofing, siding, gutters & exterior solutions built to last.",
+      },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { property: "og:site_name", content: "Precision Roofing & Exteriors" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       {
         rel: "stylesheet",
         href: appCss,
+      },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "RoofingContractor",
+          name: "Precision Roofing and Exteriors LLC",
+          description:
+            "Premium roofing, siding, gutters, windows and exterior solutions for residential and commercial properties.",
+          telephone: "+1-844-776-6334",
+          email: "info@precisionroofingandexteriors.com",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "1240 Craftsman Way, Suite 200",
+            addressLocality: "Boise",
+            addressRegion: "ID",
+            postalCode: "83702",
+            addressCountry: "US",
+          },
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "480",
+          },
+        }),
       },
     ],
   }),
@@ -118,8 +156,15 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-      <Outlet />
+      <div className="flex min-h-screen flex-col">
+        <Header />
+        <main className="flex-1">
+          {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
+          <Outlet />
+        </main>
+        <Footer />
+        <FloatingActions />
+      </div>
     </QueryClientProvider>
   );
 }
