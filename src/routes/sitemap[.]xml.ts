@@ -1,7 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
+import { services, cities, siteUrl } from "@/lib/site";
+import { blogPosts, blogCategories } from "@/lib/blog";
 
-const BASE_URL = "";
+const BASE_URL = siteUrl;
 
 interface SitemapEntry {
   path: string;
@@ -15,9 +17,15 @@ export const Route = createFileRoute("/sitemap.xml")({
       GET: async () => {
         const entries: SitemapEntry[] = [
           { path: "/", changefreq: "weekly", priority: "1.0" },
-          { path: "/about", changefreq: "monthly", priority: "0.8" },
           { path: "/services", changefreq: "monthly", priority: "0.9" },
+          { path: "/service-areas", changefreq: "monthly", priority: "0.8" },
+          { path: "/blog", changefreq: "weekly", priority: "0.8" },
+          { path: "/about", changefreq: "monthly", priority: "0.7" },
           { path: "/contact", changefreq: "monthly", priority: "0.7" },
+          ...services.map((s) => ({ path: `/services/${s.slug}`, changefreq: "monthly" as const, priority: "0.8" })),
+          ...cities.map((c) => ({ path: `/service-areas/${c.slug}`, changefreq: "monthly" as const, priority: "0.7" })),
+          ...blogCategories.map((c) => ({ path: `/blog/category/${c.slug}`, changefreq: "weekly" as const, priority: "0.6" })),
+          ...blogPosts.map((p) => ({ path: `/blog/${p.slug}`, changefreq: "monthly" as const, priority: "0.7" })),
         ];
 
         const urls = entries.map((e) =>
