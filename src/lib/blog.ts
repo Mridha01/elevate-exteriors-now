@@ -220,7 +220,7 @@ export const blogPosts: BlogPost[] = [
       { q: "Is metal roofing noisy in the rain?", a: "With proper decking and underlayment, a modern metal roof is no louder inside than a shingle roof." },
       { q: "Which adds more resale value?", a: "Both add value. Metal can appeal to buyers seeking longevity, while a quality new shingle roof is a strong, broadly appealing upgrade." },
     ],
-    relatedServices: ["roofing", "roof-replacement", "metal-roofing"],
+    relatedServices: ["roofing", "roof-replacement", "roof-repair"],
   },
   {
     slug: "gutter-maintenance-guide",
