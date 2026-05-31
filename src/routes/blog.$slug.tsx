@@ -176,7 +176,7 @@ function BlogPostPage() {
             <Button asChild variant="hero" size="lg" className="mt-4 w-full">
               <Link to="/contact">Get Free Estimate</Link>
             </Button>
-            <Button asChild variant=" link" size="sm" className="mt-1 w-full">
+            <Button asChild variant="link" size="sm" className="mt-1 w-full">
               <a href={company.phoneHref}><Phone className="size-4" /> {company.phoneDisplay}</a>
             </Button>
           </div>
