@@ -15,7 +15,9 @@ import { Route as ServiceAreasRouteImport } from './routes/service-areas'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as ServicesSlugRouteImport } from './routes/services.$slug'
+import { Route as ServiceAreasCityRouteImport } from './routes/service-areas.$city'
 
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
@@ -47,39 +49,55 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BlogIndexRoute = BlogIndexRouteImport.update({
+  id: '/blog/',
+  path: '/blog/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ServicesSlugRoute = ServicesSlugRouteImport.update({
   id: '/$slug',
   path: '/$slug',
   getParentRoute: () => ServicesRoute,
+} as any)
+const ServiceAreasCityRoute = ServiceAreasCityRouteImport.update({
+  id: '/$city',
+  path: '/$city',
+  getParentRoute: () => ServiceAreasRoute,
 } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
-  '/service-areas': typeof ServiceAreasRoute
+  '/service-areas': typeof ServiceAreasRouteWithChildren
   '/services': typeof ServicesRouteWithChildren
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/service-areas/$city': typeof ServiceAreasCityRoute
   '/services/$slug': typeof ServicesSlugRoute
+  '/blog/': typeof BlogIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
-  '/service-areas': typeof ServiceAreasRoute
+  '/service-areas': typeof ServiceAreasRouteWithChildren
   '/services': typeof ServicesRouteWithChildren
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/service-areas/$city': typeof ServiceAreasCityRoute
   '/services/$slug': typeof ServicesSlugRoute
+  '/blog': typeof BlogIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
-  '/service-areas': typeof ServiceAreasRoute
+  '/service-areas': typeof ServiceAreasRouteWithChildren
   '/services': typeof ServicesRouteWithChildren
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/service-areas/$city': typeof ServiceAreasCityRoute
   '/services/$slug': typeof ServicesSlugRoute
+  '/blog/': typeof BlogIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -90,7 +108,9 @@ export interface FileRouteTypes {
     | '/service-areas'
     | '/services'
     | '/sitemap.xml'
+    | '/service-areas/$city'
     | '/services/$slug'
+    | '/blog/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -99,7 +119,9 @@ export interface FileRouteTypes {
     | '/service-areas'
     | '/services'
     | '/sitemap.xml'
+    | '/service-areas/$city'
     | '/services/$slug'
+    | '/blog'
   id:
     | '__root__'
     | '/'
@@ -108,16 +130,19 @@ export interface FileRouteTypes {
     | '/service-areas'
     | '/services'
     | '/sitemap.xml'
+    | '/service-areas/$city'
     | '/services/$slug'
+    | '/blog/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   ContactRoute: typeof ContactRoute
-  ServiceAreasRoute: typeof ServiceAreasRoute
+  ServiceAreasRoute: typeof ServiceAreasRouteWithChildren
   ServicesRoute: typeof ServicesRouteWithChildren
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  BlogIndexRoute: typeof BlogIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -164,6 +189,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/': {
+      id: '/blog/'
+      path: '/blog'
+      fullPath: '/blog/'
+      preLoaderRoute: typeof BlogIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/services/$slug': {
       id: '/services/$slug'
       path: '/$slug'
@@ -171,8 +203,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServicesSlugRouteImport
       parentRoute: typeof ServicesRoute
     }
+    '/service-areas/$city': {
+      id: '/service-areas/$city'
+      path: '/$city'
+      fullPath: '/service-areas/$city'
+      preLoaderRoute: typeof ServiceAreasCityRouteImport
+      parentRoute: typeof ServiceAreasRoute
+    }
   }
 }
+
+interface ServiceAreasRouteChildren {
+  ServiceAreasCityRoute: typeof ServiceAreasCityRoute
+}
+
+const ServiceAreasRouteChildren: ServiceAreasRouteChildren = {
+  ServiceAreasCityRoute: ServiceAreasCityRoute,
+}
+
+const ServiceAreasRouteWithChildren = ServiceAreasRoute._addFileChildren(
+  ServiceAreasRouteChildren,
+)
 
 interface ServicesRouteChildren {
   ServicesSlugRoute: typeof ServicesSlugRoute
@@ -190,9 +241,10 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   ContactRoute: ContactRoute,
-  ServiceAreasRoute: ServiceAreasRoute,
+  ServiceAreasRoute: ServiceAreasRouteWithChildren,
   ServicesRoute: ServicesRouteWithChildren,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
+  BlogIndexRoute: BlogIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
