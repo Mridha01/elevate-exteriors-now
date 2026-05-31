@@ -18,7 +18,8 @@ export function ServicesSection() {
           {services.map((service, i) => (
             <Reveal key={service.slug} delay={(i % 4) * 80}>
               <Link
-                to="/services"
+                to="/services/$slug"
+                params={{ slug: service.slug }}
                 className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card p-6 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-primary/40 hover:shadow-glow"
               >
                 <span className="pointer-events-none absolute -right-8 -top-8 size-24 rounded-full bg-primary/5 transition-transform duration-500 group-hover:scale-150" />
