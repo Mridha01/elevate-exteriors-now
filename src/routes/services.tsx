@@ -57,8 +57,8 @@ function ServicesPage() {
                   ))}
                 </ul>
                 <Button asChild variant="ink" size="sm" className="mt-auto w-fit">
-                  <Link to="/contact">
-                    Request a Quote <ArrowRight />
+                  <Link to="/services/$slug" params={{ slug: service.slug }}>
+                    View Service <ArrowRight />
                   </Link>
                 </Button>
               </div>
