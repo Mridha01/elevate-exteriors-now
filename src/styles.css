@@ -134,7 +134,11 @@
     color-mix(in oklab, oklch(0.16 0.02 260) 35%, transparent) 0%,
     color-mix(in oklab, oklch(0.14 0.02 260) 78%, transparent) 100%
   );
-  --gradient-sheen: linear-gradient(135deg, color-mix(in oklab, white 16%, transparent), transparent 60%);
+  --gradient-sheen: linear-gradient(
+    135deg,
+    color-mix(in oklab, white 16%, transparent),
+    transparent 60%
+  );
 
   /* Shadows */
   --shadow-sm: 0 1px 2px -1px color-mix(in oklab, oklch(0.21 0.024 258) 18%, transparent);
@@ -189,7 +193,11 @@
     -webkit-font-smoothing: antialiased;
   }
 
-  h1, h2, h3, h4, h5 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
     font-family: var(--font-display);
     letter-spacing: -0.02em;
   }
@@ -237,7 +245,9 @@
   .reveal {
     opacity: 0;
     transform: translateY(28px);
-    transition: opacity 0.7s var(--transition-base), transform 0.7s var(--transition-base);
+    transition:
+      opacity 0.7s var(--transition-base),
+      transform 0.7s var(--transition-base);
     will-change: opacity, transform;
   }
   .reveal.is-visible {
@@ -247,16 +257,29 @@
 }
 
 @keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 @keyframes float-y {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
 }
 
 @keyframes shimmer {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
 }

@@ -5,9 +5,21 @@ import { Reveal } from "@/components/Reveal";
 import { SectionHeading } from "@/components/SectionHeading";
 
 const plans = [
-  { icon: CalendarClock, title: "Flexible Payment Plans", text: "Spread the cost of your project over terms that fit your budget." },
-  { icon: CreditCard, title: "Low Monthly Financing", text: "Affordable monthly payments with competitive rates and no prepayment penalty." },
-  { icon: Zap, title: "Easy Approval Process", text: "Quick online application with fast decisions — often within minutes." },
+  {
+    icon: CalendarClock,
+    title: "Flexible Payment Plans",
+    text: "Spread the cost of your project over terms that fit your budget.",
+  },
+  {
+    icon: CreditCard,
+    title: "Low Monthly Financing",
+    text: "Affordable monthly payments with competitive rates and no prepayment penalty.",
+  },
+  {
+    icon: Zap,
+    title: "Easy Approval Process",
+    text: "Quick online application with fast decisions — often within minutes.",
+  },
 ];
 
 export function FinancingSection() {
@@ -22,11 +34,13 @@ export function FinancingSection() {
             description="Don't let budget delay critical repairs. Our flexible financing puts a premium roof within reach with simple, affordable monthly payments."
           />
           <ul className="mt-6 space-y-3">
-            {["No money down options", "Competitive low rates", "Fast, simple approval"].map((f) => (
-              <li key={f} className="flex items-center gap-2.5 font-600 text-foreground">
-                <CheckCircle2 className="size-5 text-primary" /> {f}
-              </li>
-            ))}
+            {["No money down options", "Competitive low rates", "Fast, simple approval"].map(
+              (f) => (
+                <li key={f} className="flex items-center gap-2.5 font-600 text-foreground">
+                  <CheckCircle2 className="size-5 text-primary" /> {f}
+                </li>
+              ),
+            )}
           </ul>
           <div className="mt-8">
             <Button asChild variant="hero" size="lg">

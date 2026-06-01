@@ -70,7 +70,9 @@ function BlogPostPage() {
   const path = `/blog/${post.slug}`;
   const author = authors[post.author];
   const category = getCategory(post.category);
-  const related = blogPosts.filter((p) => p.slug !== post.slug && p.category === post.category).slice(0, 3);
+  const related = blogPosts
+    .filter((p) => p.slug !== post.slug && p.category === post.category)
+    .slice(0, 3);
   const relatedFallback =
     related.length > 0 ? related : blogPosts.filter((p) => p.slug !== post.slug).slice(0, 3);
 
@@ -100,8 +102,12 @@ function BlogPostPage() {
             {post.title}
           </h1>
           <div className="mt-5 flex flex-wrap items-center gap-4 text-sm text-ink-muted">
-            <span className="flex items-center gap-1.5"><Calendar className="size-4" /> {formatDate(post.date)}</span>
-            <span className="flex items-center gap-1.5"><Clock className="size-4" /> {post.readTime}</span>
+            <span className="flex items-center gap-1.5">
+              <Calendar className="size-4" /> {formatDate(post.date)}
+            </span>
+            <span className="flex items-center gap-1.5">
+              <Clock className="size-4" /> {post.readTime}
+            </span>
             <span>By {author.name}</span>
           </div>
         </div>
@@ -110,7 +116,12 @@ function BlogPostPage() {
       {/* Featured image */}
       <div className="px-6">
         <div className="mx-auto -mt-8 max-w-4xl overflow-hidden rounded-3xl border border-border shadow-elegant md:-mt-10">
-          <img src={post.image} alt={post.imageAlt} loading="eager" className="aspect-[16/9] w-full object-cover" />
+          <img
+            src={post.image}
+            alt={post.imageAlt}
+            loading="eager"
+            className="aspect-[16/9] w-full object-cover"
+          />
         </div>
       </div>
 
@@ -121,7 +132,9 @@ function BlogPostPage() {
           <div className="mt-10 space-y-10">
             {post.sections.map((section) => (
               <section key={section.id} id={section.id} className="scroll-mt-28">
-                <h2 className="font-display text-2xl font-700 text-foreground">{section.heading}</h2>
+                <h2 className="font-display text-2xl font-700 text-foreground">
+                  {section.heading}
+                </h2>
                 <div className="mt-4 space-y-4 leading-relaxed text-muted-foreground">
                   {section.body.map((p, i) => (
                     <p key={i}>{p}</p>
@@ -148,7 +161,9 @@ function BlogPostPage() {
             </span>
             <div>
               <p className="font-display text-base font-700 text-foreground">{author.name}</p>
-              <p className="text-xs font-600 uppercase tracking-wider text-primary">{author.role}</p>
+              <p className="text-xs font-600 uppercase tracking-wider text-primary">
+                {author.role}
+              </p>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{author.bio}</p>
             </div>
           </div>
@@ -163,7 +178,10 @@ function BlogPostPage() {
             <ul className="mt-4 space-y-2.5 text-sm">
               {post.sections.map((s) => (
                 <li key={s.id}>
-                  <a href={`#${s.id}`} className="text-muted-foreground transition-colors hover:text-primary">
+                  <a
+                    href={`#${s.id}`}
+                    className="text-muted-foreground transition-colors hover:text-primary"
+                  >
                     {s.heading}
                   </a>
                 </li>
@@ -172,12 +190,16 @@ function BlogPostPage() {
           </div>
           <div className="rounded-2xl border border-primary/20 bg-primary/5 p-6 text-center shadow-sm">
             <h2 className="font-display text-lg font-700 text-foreground">Need a free estimate?</h2>
-            <p className="mt-2 text-sm text-muted-foreground">Talk to our team about your project today.</p>
+            <p className="mt-2 text-sm text-muted-foreground">
+              Talk to our team about your project today.
+            </p>
             <Button asChild variant="hero" size="lg" className="mt-4 w-full">
               <Link to="/contact">Get Free Estimate</Link>
             </Button>
             <Button asChild variant="link" size="sm" className="mt-1 w-full">
-              <a href={company.phoneHref}><Phone className="size-4" /> {company.phoneDisplay}</a>
+              <a href={company.phoneHref}>
+                <Phone className="size-4" /> {company.phoneDisplay}
+              </a>
             </Button>
           </div>
         </aside>
@@ -189,7 +211,11 @@ function BlogPostPage() {
         title="Services mentioned in this article"
       />
 
-      <FaqAccordion faqs={post.faqs} title="Article FAQs" description="Quick answers related to this topic." />
+      <FaqAccordion
+        faqs={post.faqs}
+        title="Article FAQs"
+        description="Quick answers related to this topic."
+      />
 
       {/* Related posts */}
       <section className="px-6 py-16">
@@ -206,14 +232,21 @@ function BlogPostPage() {
       {/* CTA */}
       <section className="bg-gradient-ink px-6 py-16 text-center">
         <Reveal className="mx-auto max-w-2xl">
-          <h2 className="font-display text-2xl font-800 text-white sm:text-3xl">Ready to protect your home?</h2>
+          <h2 className="font-display text-2xl font-800 text-white sm:text-3xl">
+            Ready to protect your home?
+          </h2>
           <p className="mx-auto mt-3 max-w-xl text-ink-muted">
-            Get a free, no-obligation estimate from the team trusted by hundreds of local homeowners.
+            Get a free, no-obligation estimate from the team trusted by hundreds of local
+            homeowners.
           </p>
           <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
-            <Button asChild variant="hero" size="xl"><Link to="/contact">Get Free Estimate</Link></Button>
+            <Button asChild variant="hero" size="xl">
+              <Link to="/contact">Get Free Estimate</Link>
+            </Button>
             <Button asChild variant="outline-light" size="xl">
-              <a href={company.phoneHref}><Phone /> {company.phoneDisplay}</a>
+              <a href={company.phoneHref}>
+                <Phone /> {company.phoneDisplay}
+              </a>
             </Button>
           </div>
         </Reveal>

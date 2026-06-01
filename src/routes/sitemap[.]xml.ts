@@ -22,10 +22,26 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/blog", changefreq: "weekly", priority: "0.8" },
           { path: "/about", changefreq: "monthly", priority: "0.7" },
           { path: "/contact", changefreq: "monthly", priority: "0.7" },
-          ...services.map((s) => ({ path: `/services/${s.slug}`, changefreq: "monthly" as const, priority: "0.8" })),
-          ...cities.map((c) => ({ path: `/service-areas/${c.slug}`, changefreq: "monthly" as const, priority: "0.7" })),
-          ...blogCategories.map((c) => ({ path: `/blog/category/${c.slug}`, changefreq: "weekly" as const, priority: "0.6" })),
-          ...blogPosts.map((p) => ({ path: `/blog/${p.slug}`, changefreq: "monthly" as const, priority: "0.7" })),
+          ...services.map((s) => ({
+            path: `/services/${s.slug}`,
+            changefreq: "monthly" as const,
+            priority: "0.8",
+          })),
+          ...cities.map((c) => ({
+            path: `/service-areas/${c.slug}`,
+            changefreq: "monthly" as const,
+            priority: "0.7",
+          })),
+          ...blogCategories.map((c) => ({
+            path: `/blog/category/${c.slug}`,
+            changefreq: "weekly" as const,
+            priority: "0.6",
+          })),
+          ...blogPosts.map((p) => ({
+            path: `/blog/${p.slug}`,
+            changefreq: "monthly" as const,
+            priority: "0.7",
+          })),
         ];
 
         const urls = entries.map((e) =>

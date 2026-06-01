@@ -57,7 +57,9 @@ function ContactPage() {
                     <c.icon className="size-6" />
                   </span>
                   <div>
-                    <p className="text-xs font-700 uppercase tracking-wider text-muted-foreground">{c.label}</p>
+                    <p className="text-xs font-700 uppercase tracking-wider text-muted-foreground">
+                      {c.label}
+                    </p>
                     <p className="mt-1 font-600 text-foreground">{c.value}</p>
                   </div>
                 </div>
@@ -80,8 +82,8 @@ function ContactPage() {
                   <CheckCircle2 className="size-14 text-primary" />
                   <h2 className="font-display text-2xl font-700">Thank you!</h2>
                   <p className="max-w-sm text-muted-foreground">
-                    Your request has been received. A member of our team will reach out shortly to schedule
-                    your free inspection.
+                    Your request has been received. A member of our team will reach out shortly to
+                    schedule your free inspection.
                   </p>
                 </div>
               ) : (
@@ -92,7 +94,9 @@ function ContactPage() {
                     setSubmitted(true);
                   }}
                 >
-                  <h2 className="font-display text-2xl font-700 text-foreground">Request a free estimate</h2>
+                  <h2 className="font-display text-2xl font-700 text-foreground">
+                    Request a free estimate
+                  </h2>
                   <div className="grid gap-5 sm:grid-cols-2">
                     <div className="space-y-2">
                       <Label htmlFor="name">Full Name</Label>
@@ -100,12 +104,24 @@ function ContactPage() {
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="phone">Phone</Label>
-                      <Input id="phone" name="phone" type="tel" required placeholder="(844) 776-6334" />
+                      <Input
+                        id="phone"
+                        name="phone"
+                        type="tel"
+                        required
+                        placeholder="(844) 776-6334"
+                      />
                     </div>
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="email">Email</Label>
-                    <Input id="email" name="email" type="email" required placeholder="jane@email.com" />
+                    <Input
+                      id="email"
+                      name="email"
+                      type="email"
+                      required
+                      placeholder="jane@email.com"
+                    />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="service">Service Needed</Label>
@@ -126,7 +142,12 @@ function ContactPage() {
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="message">Project Details</Label>
-                    <Textarea id="message" name="message" rows={4} placeholder="Tell us about your project..." />
+                    <Textarea
+                      id="message"
+                      name="message"
+                      rows={4}
+                      placeholder="Tell us about your project..."
+                    />
                   </div>
                   <Button type="submit" variant="hero" size="xl" className="w-full">
                     <Send /> Get My Free Estimate

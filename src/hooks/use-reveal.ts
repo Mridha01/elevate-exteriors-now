@@ -3,7 +3,9 @@ import { useEffect, useRef, useState } from "react";
 /**
  * Scroll-reveal hook. Adds an in-view flag when the element enters the viewport.
  */
-export function useReveal<T extends HTMLElement = HTMLDivElement>(options?: IntersectionObserverInit) {
+export function useReveal<T extends HTMLElement = HTMLDivElement>(
+  options?: IntersectionObserverInit,
+) {
   const ref = useRef<T>(null);
   const [visible, setVisible] = useState(false);
 

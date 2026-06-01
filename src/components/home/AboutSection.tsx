@@ -52,7 +52,9 @@ export function AboutSection() {
           <div className="absolute -bottom-6 -right-2 flex items-center gap-3 rounded-2xl bg-ink px-5 py-4 text-ink-foreground shadow-glow sm:-right-6">
             <Award className="size-9 text-primary-glow" />
             <div>
-              <p className="font-display text-2xl font-800 leading-none">{company.yearsExperience}+</p>
+              <p className="font-display text-2xl font-800 leading-none">
+                {company.yearsExperience}+
+              </p>
               <p className="text-xs text-ink-muted">Years of Excellence</p>
             </div>
           </div>
@@ -67,9 +69,9 @@ export function AboutSection() {
           />
 
           <p className="mt-4 text-muted-foreground">
-            Our mission is to be the most trusted exterior contractor in the region — combining premium
-            materials, skilled craftsmanship, and a customer experience that's stress-free from
-            inspection to final walkthrough.
+            Our mission is to be the most trusted exterior contractor in the region — combining
+            premium materials, skilled craftsmanship, and a customer experience that's stress-free
+            from inspection to final walkthrough.
           </p>
 
           <ul className="mt-6 grid gap-3 sm:grid-cols-2">

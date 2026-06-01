@@ -28,8 +28,8 @@ export function QuickEstimateForm({
         <CheckCircle2 className="size-14 text-primary" />
         <h3 className="font-display text-2xl font-700">Thank you!</h3>
         <p className="max-w-sm text-muted-foreground">
-          Your request has been received. A member of our team will reach out shortly to schedule your free
-          inspection.
+          Your request has been received. A member of our team will reach out shortly to schedule
+          your free inspection.
         </p>
       </div>
     );
@@ -75,7 +75,12 @@ export function QuickEstimateForm({
       {!compact && (
         <div className="space-y-2">
           <Label htmlFor="qe-message">Project Details</Label>
-          <Textarea id="qe-message" name="message" rows={4} placeholder="Tell us about your project..." />
+          <Textarea
+            id="qe-message"
+            name="message"
+            rows={4}
+            placeholder="Tell us about your project..."
+          />
         </div>
       )}
       <Button type="submit" variant="hero" size="xl" className="w-full">

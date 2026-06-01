@@ -24,8 +24,12 @@ export function PageHero({ eyebrow, title, description, crumb }: PageHeroProps) 
             {eyebrow}
           </span>
         )}
-        <h1 className="mt-5 font-display text-4xl font-800 leading-tight text-white sm:text-5xl">{title}</h1>
-        {description && <p className="mx-auto mt-4 max-w-xl text-lg text-ink-muted">{description}</p>}
+        <h1 className="mt-5 font-display text-4xl font-800 leading-tight text-white sm:text-5xl">
+          {title}
+        </h1>
+        {description && (
+          <p className="mx-auto mt-4 max-w-xl text-lg text-ink-muted">{description}</p>
+        )}
         <nav className="mt-6 flex items-center justify-center gap-1.5 text-sm text-ink-muted">
           <Link to="/" className="hover:text-primary-glow">
             Home

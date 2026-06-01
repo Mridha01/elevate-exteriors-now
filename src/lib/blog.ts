@@ -33,10 +33,26 @@ export interface BlogCategory {
 }
 
 export const blogCategories: BlogCategory[] = [
-  { slug: "roofing", name: "Roofing", description: "Roof maintenance, materials, repair and replacement guidance." },
-  { slug: "storm-damage", name: "Storm Damage", description: "Storm preparation, damage assessment and insurance claim help." },
-  { slug: "exteriors", name: "Exteriors", description: "Siding, gutters, windows and full exterior upgrades." },
-  { slug: "maintenance", name: "Maintenance", description: "Seasonal home and roof maintenance tips that prevent costly damage." },
+  {
+    slug: "roofing",
+    name: "Roofing",
+    description: "Roof maintenance, materials, repair and replacement guidance.",
+  },
+  {
+    slug: "storm-damage",
+    name: "Storm Damage",
+    description: "Storm preparation, damage assessment and insurance claim help.",
+  },
+  {
+    slug: "exteriors",
+    name: "Exteriors",
+    description: "Siding, gutters, windows and full exterior upgrades.",
+  },
+  {
+    slug: "maintenance",
+    name: "Maintenance",
+    description: "Seasonal home and roof maintenance tips that prevent costly damage.",
+  },
 ];
 
 export interface BlogSection {
@@ -116,9 +132,18 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     faqs: [
-      { q: "How long do most roofs last?", a: "Architectural asphalt shingles typically last 25–30 years, while metal and premium systems can last 50 years or more with proper installation and ventilation." },
-      { q: "Can I just keep repairing my old roof?", a: "Repairs make sense for isolated issues, but once damage is widespread or the roof is near the end of its life, repeated repairs cost more than a replacement that restores decades of protection." },
-      { q: "Will insurance pay for a new roof?", a: "If your roof was damaged by a covered event like a storm, insurance may cover replacement. Our team documents the damage and helps you navigate the claim." },
+      {
+        q: "How long do most roofs last?",
+        a: "Architectural asphalt shingles typically last 25–30 years, while metal and premium systems can last 50 years or more with proper installation and ventilation.",
+      },
+      {
+        q: "Can I just keep repairing my old roof?",
+        a: "Repairs make sense for isolated issues, but once damage is widespread or the roof is near the end of its life, repeated repairs cost more than a replacement that restores decades of protection.",
+      },
+      {
+        q: "Will insurance pay for a new roof?",
+        a: "If your roof was damaged by a covered event like a storm, insurance may cover replacement. Our team documents the damage and helps you navigate the claim.",
+      },
     ],
     relatedServices: ["roof-replacement", "roof-repair", "roofing"],
   },
@@ -166,9 +191,18 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     faqs: [
-      { q: "How soon should I file a storm claim?", a: "As soon as possible. Most policies have a filing window, and acting quickly with strong documentation improves your odds of a fair, full payout." },
-      { q: "Should I get an inspection before filing?", a: "A professional inspection before or alongside filing helps you understand the true extent of damage and ensures nothing is missed in your claim." },
-      { q: "Do you work directly with insurance adjusters?", a: "Yes. We document damage in detail and meet with adjusters when possible to advocate for a fair assessment." },
+      {
+        q: "How soon should I file a storm claim?",
+        a: "As soon as possible. Most policies have a filing window, and acting quickly with strong documentation improves your odds of a fair, full payout.",
+      },
+      {
+        q: "Should I get an inspection before filing?",
+        a: "A professional inspection before or alongside filing helps you understand the true extent of damage and ensures nothing is missed in your claim.",
+      },
+      {
+        q: "Do you work directly with insurance adjusters?",
+        a: "Yes. We document damage in detail and meet with adjusters when possible to advocate for a fair assessment.",
+      },
     ],
     relatedServices: ["storm-damage-repair", "emergency-roofing", "roof-repair"],
   },
@@ -216,9 +250,18 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     faqs: [
-      { q: "Is metal roofing worth the extra cost?", a: "If you plan to stay in your home long-term, metal's longevity and durability often make it the better value despite the higher upfront cost." },
-      { q: "Is metal roofing noisy in the rain?", a: "With proper decking and underlayment, a modern metal roof is no louder inside than a shingle roof." },
-      { q: "Which adds more resale value?", a: "Both add value. Metal can appeal to buyers seeking longevity, while a quality new shingle roof is a strong, broadly appealing upgrade." },
+      {
+        q: "Is metal roofing worth the extra cost?",
+        a: "If you plan to stay in your home long-term, metal's longevity and durability often make it the better value despite the higher upfront cost.",
+      },
+      {
+        q: "Is metal roofing noisy in the rain?",
+        a: "With proper decking and underlayment, a modern metal roof is no louder inside than a shingle roof.",
+      },
+      {
+        q: "Which adds more resale value?",
+        a: "Both add value. Metal can appeal to buyers seeking longevity, while a quality new shingle roof is a strong, broadly appealing upgrade.",
+      },
     ],
     relatedServices: ["roofing", "roof-replacement", "roof-repair"],
   },
@@ -259,9 +302,18 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     faqs: [
-      { q: "How often should I clean my gutters?", a: "At least twice a year — spring and fall — and after major storms. Homes under heavy tree cover may need more frequent cleaning or leaf guards." },
-      { q: "Are leaf guards worth it?", a: "For most homes with nearby trees, yes. They significantly reduce clogs and cleaning while protecting your foundation from overflow." },
-      { q: "Can clogged gutters really damage my foundation?", a: "Absolutely. Overflowing gutters are a leading cause of foundation cracks, basement leaks and costly water damage." },
+      {
+        q: "How often should I clean my gutters?",
+        a: "At least twice a year — spring and fall — and after major storms. Homes under heavy tree cover may need more frequent cleaning or leaf guards.",
+      },
+      {
+        q: "Are leaf guards worth it?",
+        a: "For most homes with nearby trees, yes. They significantly reduce clogs and cleaning while protecting your foundation from overflow.",
+      },
+      {
+        q: "Can clogged gutters really damage my foundation?",
+        a: "Absolutely. Overflowing gutters are a leading cause of foundation cracks, basement leaks and costly water damage.",
+      },
     ],
     relatedServices: ["gutters", "gutter-installation", "gutter-repair"],
   },
@@ -309,9 +361,18 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     faqs: [
-      { q: "Which exterior upgrade has the best ROI?", a: "New siding and a new roof consistently rank among the highest-return exterior upgrades, improving both curb appeal and resale value." },
-      { q: "Should I do these projects together?", a: "Bundling exterior projects can save on labor and ensure a cohesive look. We can coordinate roofing, siding, gutters and windows as one project." },
-      { q: "Do exterior upgrades really help with resale?", a: "Yes. Curb appeal strongly influences buyer perception and offers, and protective upgrades like roofing reassure buyers about the home's condition." },
+      {
+        q: "Which exterior upgrade has the best ROI?",
+        a: "New siding and a new roof consistently rank among the highest-return exterior upgrades, improving both curb appeal and resale value.",
+      },
+      {
+        q: "Should I do these projects together?",
+        a: "Bundling exterior projects can save on labor and ensure a cohesive look. We can coordinate roofing, siding, gutters and windows as one project.",
+      },
+      {
+        q: "Do exterior upgrades really help with resale?",
+        a: "Yes. Curb appeal strongly influences buyer perception and offers, and protective upgrades like roofing reassure buyers about the home's condition.",
+      },
     ],
     relatedServices: ["siding-installation", "window-replacement", "gutters"],
   },
@@ -359,9 +420,18 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     faqs: [
-      { q: "What causes ice dams?", a: "Ice dams form when heat escapes into the attic, melts snow on the roof, and the runoff refreezes at the cold eaves. Proper ventilation, insulation and clean gutters help prevent them." },
-      { q: "Should I remove snow from my roof?", a: "For most roofs occasional snow is fine, but heavy accumulation or ice dams should be handled carefully — ideally by professionals to avoid damage and injury." },
-      { q: "When should I schedule a fall inspection?", a: "Early to mid fall is ideal, giving you time to complete any needed repairs before the first major snowfall." },
+      {
+        q: "What causes ice dams?",
+        a: "Ice dams form when heat escapes into the attic, melts snow on the roof, and the runoff refreezes at the cold eaves. Proper ventilation, insulation and clean gutters help prevent them.",
+      },
+      {
+        q: "Should I remove snow from my roof?",
+        a: "For most roofs occasional snow is fine, but heavy accumulation or ice dams should be handled carefully — ideally by professionals to avoid damage and injury.",
+      },
+      {
+        q: "When should I schedule a fall inspection?",
+        a: "Early to mid fall is ideal, giving you time to complete any needed repairs before the first major snowfall.",
+      },
     ],
     relatedServices: ["roof-repair", "gutters", "roofing"],
   },

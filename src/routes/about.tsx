@@ -16,7 +16,10 @@ export const Route = createFileRoute("/about")({
           "For over 25 years Precision Roofing & Exteriors has protected homes with certified craftsmanship, premium materials and a stress-free customer experience.",
       },
       { property: "og:title", content: "About Precision Roofing & Exteriors" },
-      { property: "og:description", content: "Certified craftsmanship and trust, built into every project." },
+      {
+        property: "og:description",
+        content: "Certified craftsmanship and trust, built into every project.",
+      },
       { property: "og:url", content: "/about" },
     ],
     links: [{ rel: "canonical", href: "/about" }],

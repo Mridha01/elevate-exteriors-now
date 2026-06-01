@@ -18,7 +18,10 @@ export const Route = createFileRoute("/service-areas")({
           "Precision Roofing & Exteriors serves Boise, Meridian, Nampa, Eagle, Caldwell and the greater Treasure Valley with premium roofing, siding and gutters.",
       },
       { property: "og:title", content: "Service Areas | Precision Roofing & Exteriors" },
-      { property: "og:description", content: "Local roofing & exterior experts across the Treasure Valley." },
+      {
+        property: "og:description",
+        content: "Local roofing & exterior experts across the Treasure Valley.",
+      },
       { property: "og:url", content: "/service-areas" },
     ],
     links: [{ rel: "canonical", href: "/service-areas" }],
@@ -60,7 +63,9 @@ function ServiceAreasPage() {
                   <span className="flex items-center gap-2 font-display text-lg font-700 text-foreground">
                     <MapPin className="size-5 text-primary" /> {c.name}, {c.state}
                   </span>
-                  <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">{c.intro}</p>
+                  <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
+                    {c.intro}
+                  </p>
                   <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-700 text-primary">
                     View {c.name} services
                     <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
@@ -72,9 +77,12 @@ function ServiceAreasPage() {
           <div className="lg:sticky lg:top-28 lg:self-start">
             <ServiceAreaMap />
             <div className="mt-6 rounded-2xl border border-border bg-card p-6 shadow-sm">
-              <h2 className="font-display text-lg font-700 text-foreground">Don't see your town?</h2>
+              <h2 className="font-display text-lg font-700 text-foreground">
+                Don't see your town?
+              </h2>
               <p className="mt-2 text-sm text-muted-foreground">
-                We cover much of the greater Treasure Valley. Give us a call — chances are we serve your area.
+                We cover much of the greater Treasure Valley. Give us a call — chances are we serve
+                your area.
               </p>
               <Button asChild variant="hero" size="lg" className="mt-4 w-full">
                 <a href={company.phoneHref}>

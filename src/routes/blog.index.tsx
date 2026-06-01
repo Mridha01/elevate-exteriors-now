@@ -16,7 +16,10 @@ export const Route = createFileRoute("/blog/")({
           "Expert roofing, siding, gutter and storm-damage advice from Precision Roofing & Exteriors. Practical guides to help you protect and improve your home.",
       },
       { property: "og:title", content: "Roofing & Exterior Blog | Precision Roofing & Exteriors" },
-      { property: "og:description", content: "Practical roofing and exterior advice for homeowners." },
+      {
+        property: "og:description",
+        content: "Practical roofing and exterior advice for homeowners.",
+      },
       { property: "og:url", content: "/blog" },
     ],
     links: [{ rel: "canonical", href: "/blog" }],
@@ -94,12 +97,17 @@ function BlogArchive() {
                 </h2>
                 <p className="mt-3 text-muted-foreground">{featured.excerpt}</p>
                 <div className="mt-5 flex items-center gap-4 text-xs text-muted-foreground">
-                  <span className="flex items-center gap-1.5"><Calendar className="size-3.5" /> {formatDate(featured.date)}</span>
-                  <span className="flex items-center gap-1.5"><Clock className="size-3.5" /> {featured.readTime}</span>
+                  <span className="flex items-center gap-1.5">
+                    <Calendar className="size-3.5" /> {formatDate(featured.date)}
+                  </span>
+                  <span className="flex items-center gap-1.5">
+                    <Clock className="size-3.5" /> {featured.readTime}
+                  </span>
                   <span>By {fAuthor.name}</span>
                 </div>
                 <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-700 text-primary">
-                  Read article <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
+                  Read article{" "}
+                  <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
                 </span>
               </div>
             </Link>
@@ -142,11 +150,17 @@ export function BlogCard({ post }: { post: (typeof blogPosts)[number] }) {
         <span className="text-xs font-700 uppercase tracking-wider text-primary">
           {blogCategories.find((c) => c.slug === post.category)?.name}
         </span>
-        <h3 className="mt-2 font-display text-lg font-700 leading-snug text-foreground">{post.title}</h3>
+        <h3 className="mt-2 font-display text-lg font-700 leading-snug text-foreground">
+          {post.title}
+        </h3>
         <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">{post.excerpt}</p>
         <div className="mt-4 flex items-center gap-3 text-xs text-muted-foreground">
-          <span className="flex items-center gap-1.5"><Calendar className="size-3.5" /> {formatDate(post.date)}</span>
-          <span className="flex items-center gap-1.5"><Clock className="size-3.5" /> {post.readTime}</span>
+          <span className="flex items-center gap-1.5">
+            <Calendar className="size-3.5" /> {formatDate(post.date)}
+          </span>
+          <span className="flex items-center gap-1.5">
+            <Clock className="size-3.5" /> {post.readTime}
+          </span>
         </div>
       </div>
     </Link>
@@ -154,5 +168,9 @@ export function BlogCard({ post }: { post: (typeof blogPosts)[number] }) {
 }
 
 export function formatDate(d: string) {
-  return new Date(d).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" });
+  return new Date(d).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+  });
 }

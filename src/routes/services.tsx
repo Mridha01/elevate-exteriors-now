@@ -19,7 +19,10 @@ export const Route = createFileRoute("/services")({
           "Complete roofing and exterior services: roof repair, replacement, siding, gutters, windows, storm damage and full exterior solutions. Free estimates.",
       },
       { property: "og:title", content: "Roofing & Exterior Services | Precision" },
-      { property: "og:description", content: "One trusted team for everything that protects your home." },
+      {
+        property: "og:description",
+        content: "One trusted team for everything that protects your home.",
+      },
       { property: "og:url", content: "/services" },
     ],
     links: [{ rel: "canonical", href: "/services" }],
@@ -51,7 +54,10 @@ function ServicesPage() {
                 <p className="text-muted-foreground">{service.description}</p>
                 <ul className="grid gap-2 sm:grid-cols-3">
                   {service.features.map((f) => (
-                    <li key={f} className="flex items-center gap-1.5 text-xs font-600 text-foreground">
+                    <li
+                      key={f}
+                      className="flex items-center gap-1.5 text-xs font-600 text-foreground"
+                    >
                       <CheckCircle2 className="size-4 shrink-0 text-primary" /> {f}
                     </li>
                   ))}

@@ -47,7 +47,12 @@ export function SectionHeading({
         {title}
       </h2>
       {description && (
-        <p className={cn("text-base leading-relaxed md:text-lg", invert ? "text-ink-muted" : "text-muted-foreground")}>
+        <p
+          className={cn(
+            "text-base leading-relaxed md:text-lg",
+            invert ? "text-ink-muted" : "text-muted-foreground",
+          )}
+        >
           {description}
         </p>
       )}

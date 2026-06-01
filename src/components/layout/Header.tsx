@@ -30,12 +30,16 @@ export function Header() {
           <div className="flex items-center gap-2 text-ink-muted">
             <Star className="size-3.5 fill-[var(--gold)] text-[var(--gold)]" />
             <span>
-              Rated <strong className="text-ink-foreground">{company.rating}/5</strong> from {company.reviews} homeowners
+              Rated <strong className="text-ink-foreground">{company.rating}/5</strong> from{" "}
+              {company.reviews} homeowners
             </span>
           </div>
           <div className="flex items-center gap-6 text-ink-muted">
             <span>{company.hours}</span>
-            <a href={company.phoneHref} className="flex items-center gap-1.5 font-600 text-ink-foreground hover:text-primary-glow">
+            <a
+              href={company.phoneHref}
+              className="flex items-center gap-1.5 font-600 text-ink-foreground hover:text-primary-glow"
+            >
               <Phone className="size-3.5" /> {company.phoneDisplay}
             </a>
           </div>

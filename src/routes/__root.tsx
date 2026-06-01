@@ -88,7 +88,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { name: "author", content: "Precision Roofing and Exteriors LLC" },
       { name: "theme-color", content: "#d23b32" },
-      { property: "og:title", content: "Precision Roofing & Exteriors | Roofing, Siding & Gutters" },
+      {
+        property: "og:title",
+        content: "Precision Roofing & Exteriors | Roofing, Siding & Gutters",
+      },
       {
         property: "og:description",
         content: "Trusted roofing, siding, gutters & exterior solutions built to last.",
@@ -96,12 +99,35 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "Precision Roofing & Exteriors" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Precision Roofing & Exteriors | Roofing, Siding & Gutters" },
-      { name: "description", content: "Project Zenith Elevation is a premium website redesign for a roofing and exterior contractor, focusing on lead generation and trust." },
-      { property: "og:description", content: "Project Zenith Elevation is a premium website redesign for a roofing and exterior contractor, focusing on lead generation and trust." },
-      { name: "twitter:description", content: "Project Zenith Elevation is a premium website redesign for a roofing and exterior contractor, focusing on lead generation and trust." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b4732414-057f-4318-ace2-97b867f8ee31/id-preview-98e5bc9a--ceff223a-a4bb-44ca-9d09-4853fa8d05a2.lovable.app-1780150437073.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b4732414-057f-4318-ace2-97b867f8ee31/id-preview-98e5bc9a--ceff223a-a4bb-44ca-9d09-4853fa8d05a2.lovable.app-1780150437073.png" },
+      {
+        name: "twitter:title",
+        content: "Precision Roofing & Exteriors | Roofing, Siding & Gutters",
+      },
+      {
+        name: "description",
+        content:
+          "Project Zenith Elevation is a premium website redesign for a roofing and exterior contractor, focusing on lead generation and trust.",
+      },
+      {
+        property: "og:description",
+        content:
+          "Project Zenith Elevation is a premium website redesign for a roofing and exterior contractor, focusing on lead generation and trust.",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Project Zenith Elevation is a premium website redesign for a roofing and exterior contractor, focusing on lead generation and trust.",
+      },
+      {
+        property: "og:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b4732414-057f-4318-ace2-97b867f8ee31/id-preview-98e5bc9a--ceff223a-a4bb-44ca-9d09-4853fa8d05a2.lovable.app-1780150437073.png",
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b4732414-057f-4318-ace2-97b867f8ee31/id-preview-98e5bc9a--ceff223a-a4bb-44ca-9d09-4853fa8d05a2.lovable.app-1780150437073.png",
+      },
     ],
     links: [
       {

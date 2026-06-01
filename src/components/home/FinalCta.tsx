@@ -22,8 +22,8 @@ export function FinalCta() {
           Ready To Protect Your Home?
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-lg text-white/85">
-          Schedule your free inspection today and get a no-obligation estimate from the team trusted by
-          hundreds of local homeowners.
+          Schedule your free inspection today and get a no-obligation estimate from the team trusted
+          by hundreds of local homeowners.
         </p>
         <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
           <Button asChild variant="hero" size="xl">

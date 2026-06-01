@@ -15,7 +15,10 @@ export const Route = createFileRoute("/blog/category/$category")({
       meta: [
         { title: `${category.name} Articles | Precision Roofing & Exteriors Blog` },
         { name: "description", content: category.description },
-        { property: "og:title", content: `${category.name} Articles | Precision Roofing & Exteriors` },
+        {
+          property: "og:title",
+          content: `${category.name} Articles | Precision Roofing & Exteriors`,
+        },
         { property: "og:description", content: category.description },
         { property: "og:url", content: path },
       ],
@@ -49,11 +52,19 @@ function CategoryPage() {
 
   return (
     <>
-      <PageHero eyebrow="Blog Category" title={category.name} description={category.description} crumb={category.name} />
+      <PageHero
+        eyebrow="Blog Category"
+        title={category.name}
+        description={category.description}
+        crumb={category.name}
+      />
 
       <section className="border-b border-border px-6 py-6">
         <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-2.5">
-          <Link to="/blog" className="rounded-full border border-border bg-card px-4 py-1.5 text-sm font-600 text-foreground transition-colors hover:border-primary/40 hover:text-primary">
+          <Link
+            to="/blog"
+            className="rounded-full border border-border bg-card px-4 py-1.5 text-sm font-600 text-foreground transition-colors hover:border-primary/40 hover:text-primary"
+          >
             All Posts
           </Link>
           {blogCategories.map((c) => (
@@ -81,7 +92,9 @@ function CategoryPage() {
               ))}
             </div>
           ) : (
-            <p className="text-center text-muted-foreground">No articles in this category yet. Check back soon.</p>
+            <p className="text-center text-muted-foreground">
+              No articles in this category yet. Check back soon.
+            </p>
           )}
         </div>
       </section>

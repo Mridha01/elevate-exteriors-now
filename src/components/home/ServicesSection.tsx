@@ -26,8 +26,12 @@ export function ServicesSection() {
                 <span className="relative flex size-12 items-center justify-center rounded-xl bg-gradient-primary text-primary-foreground shadow-glow">
                   <service.icon className="size-6" />
                 </span>
-                <h3 className="relative mt-5 font-display text-lg font-700 text-foreground">{service.title}</h3>
-                <p className="relative mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">{service.short}</p>
+                <h3 className="relative mt-5 font-display text-lg font-700 text-foreground">
+                  {service.title}
+                </h3>
+                <p className="relative mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
+                  {service.short}
+                </p>
                 <span className="relative mt-4 inline-flex items-center gap-1.5 text-sm font-700 text-primary">
                   Learn More
                   <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />

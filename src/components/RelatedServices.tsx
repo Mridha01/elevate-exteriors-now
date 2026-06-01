@@ -24,7 +24,11 @@ export function RelatedServices({
   if (items.length === 0) return null;
 
   return (
-    <section className={dark ? "bg-gradient-ink px-6 py-20 md:py-24" : "bg-secondary/60 px-6 py-20 md:py-24"}>
+    <section
+      className={
+        dark ? "bg-gradient-ink px-6 py-20 md:py-24" : "bg-secondary/60 px-6 py-20 md:py-24"
+      }
+    >
       <div className="mx-auto max-w-7xl">
         <SectionHeading eyebrow={eyebrow} title={title} description={description} invert={dark} />
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -38,10 +42,15 @@ export function RelatedServices({
                 <span className="flex size-12 items-center justify-center rounded-xl bg-gradient-primary text-primary-foreground shadow-glow">
                   <service.icon className="size-6" />
                 </span>
-                <h3 className="mt-5 font-display text-lg font-700 text-foreground">{service.title}</h3>
-                <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">{service.short}</p>
+                <h3 className="mt-5 font-display text-lg font-700 text-foreground">
+                  {service.title}
+                </h3>
+                <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
+                  {service.short}
+                </p>
                 <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-700 text-primary">
-                  Learn More <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
+                  Learn More{" "}
+                  <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
                 </span>
               </Link>
             </Reveal>

@@ -49,7 +49,9 @@ export function Testimonials() {
                     <Star key={s} className="size-4 fill-[var(--gold)] text-[var(--gold)]" />
                   ))}
                 </div>
-                <blockquote className="flex-1 text-sm leading-relaxed text-foreground/90">"{r.text}"</blockquote>
+                <blockquote className="flex-1 text-sm leading-relaxed text-foreground/90">
+                  "{r.text}"
+                </blockquote>
                 <figcaption className="flex items-center gap-3 border-t border-border pt-4">
                   <span className="flex size-10 items-center justify-center rounded-full bg-gradient-primary text-sm font-700 text-primary-foreground">
                     {r.initials}

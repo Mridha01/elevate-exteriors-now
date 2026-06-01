@@ -22,7 +22,10 @@ export const Route = createFileRoute("/")({
           "Premium roofing, siding, gutters, windows and storm-damage exterior solutions built to last. Licensed, insured, financing available. Free estimates.",
       },
       { property: "og:title", content: "Precision Roofing & Exteriors" },
-      { property: "og:description", content: "Trusted roofing, siding, gutters & exterior solutions built to last." },
+      {
+        property: "og:description",
+        content: "Trusted roofing, siding, gutters & exterior solutions built to last.",
+      },
       { property: "og:url", content: "/" },
     ],
     links: [{ rel: "canonical", href: "/" }],

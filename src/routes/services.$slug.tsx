@@ -8,8 +8,10 @@ import { FaqAccordion } from "@/components/FaqAccordion";
 import { RelatedServices } from "@/components/RelatedServices";
 import { QuickEstimateForm } from "@/components/QuickEstimateForm";
 import { Testimonials } from "@/components/home/Testimonials";
+import { WhyChooseUs } from "@/components/home/WhyChooseUs";
 import { getService, services, company, cities } from "@/lib/site";
 import { breadcrumbSchema, faqSchema, serviceSchema } from "@/lib/seo";
+import { getServiceImage } from "@/lib/service-images";
 import heroImg from "@/assets/hero-home.jpg";
 import beforeImg from "@/assets/before-roof.jpg";
 import afterImg from "@/assets/after-roof.jpg";
@@ -68,7 +70,7 @@ function ServiceDetailPage() {
       {/* Hero */}
       <section className="relative isolate overflow-hidden bg-gradient-ink px-6 py-20 md:py-28">
         <img
-          src={heroImg}
+          src={getServiceImage(service.slug)}
           alt=""
           aria-hidden="true"
           className="absolute inset-0 -z-10 size-full object-cover opacity-20"
@@ -105,8 +107,8 @@ function ServiceDetailPage() {
                 </Button>
               </div>
               <p className="mt-5 flex items-center gap-2 text-sm text-ink-muted">
-                <ShieldCheck className="size-4 text-primary-glow" /> Licensed & insured · Written workmanship
-                warranty · Financing available
+                <ShieldCheck className="size-4 text-primary-glow" /> Licensed & insured · Written
+                workmanship warranty · Financing available
               </p>
             </div>
             <Reveal className="hidden lg:block">
@@ -141,7 +143,7 @@ function ServiceDetailPage() {
           <Reveal>
             <div className="overflow-hidden rounded-3xl border border-border shadow-elegant">
               <img
-                src={afterImg}
+                src={getServiceImage(service.slug)}
                 alt={`Completed ${service.title.toLowerCase()} project by Precision Roofing & Exteriors`}
                 width={800}
                 height={600}
@@ -179,7 +181,10 @@ function ServiceDetailPage() {
       {/* Process */}
       <section className="px-6 py-20 md:py-24">
         <div className="mx-auto max-w-7xl">
-          <SectionHeading eyebrow="Our Process" title={`How our ${service.title.toLowerCase()} service works`} />
+          <SectionHeading
+            eyebrow="Our Process"
+            title={`How our ${service.title.toLowerCase()} service works`}
+          />
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {service.process.map((step, i) => (
               <Reveal key={step.title} delay={(i % 4) * 80}>
@@ -187,7 +192,9 @@ function ServiceDetailPage() {
                   <span className="font-display text-4xl font-800 text-primary/20">
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <h3 className="mt-2 font-display text-lg font-700 text-foreground">{step.title}</h3>
+                  <h3 className="mt-2 font-display text-lg font-700 text-foreground">
+                    {step.title}
+                  </h3>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{step.desc}</p>
                 </div>
               </Reveal>
@@ -195,6 +202,8 @@ function ServiceDetailPage() {
           </div>
         </div>
       </section>
+
+      <WhyChooseUs />
 
       {/* Before & After */}
       <section className="bg-gradient-ink px-6 py-20 md:py-24">
@@ -208,7 +217,11 @@ function ServiceDetailPage() {
           <div className="mt-12 grid gap-6 sm:grid-cols-2">
             {[
               { img: beforeImg, label: "Before", alt: "Worn roof before professional work" },
-              { img: afterImg, label: "After", alt: "Beautiful finished roof after professional work" },
+              {
+                img: afterImg,
+                label: "After",
+                alt: "Beautiful finished roof after professional work",
+              },
             ].map((g) => (
               <Reveal key={g.label}>
                 <figure className="relative overflow-hidden rounded-3xl border border-white/10 shadow-elegant">
@@ -247,8 +260,8 @@ function ServiceDetailPage() {
             {service.localLabel} across the Treasure Valley
           </h2>
           <p className="mt-2 max-w-2xl text-muted-foreground">
-            We provide {service.title.toLowerCase()} in communities throughout the region. Find local details
-            for your city:
+            We provide {service.title.toLowerCase()} in communities throughout the region. Find
+            local details for your city:
           </p>
           <div className="mt-6 flex flex-wrap gap-2.5">
             {cities.map((c) => (

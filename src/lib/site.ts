@@ -102,22 +102,58 @@ export const services: ServiceItem[] = [
       "We install architectural asphalt shingles, standing-seam metal, and modern flat-roof membranes for both residential and commercial properties, all backed by manufacturer certifications and a clean, respectful job site.",
     ],
     benefits: [
-      { title: "Certified installation", desc: "Manufacturer-certified crews protect your material and labor warranty." },
-      { title: "Premium materials", desc: "Architectural, metal and membrane systems rated for 30–50+ years." },
-      { title: "Energy efficiency", desc: "Proper ventilation and reflective options lower attic heat and bills." },
-      { title: "Written warranty", desc: "Workmanship warranty plus full manufacturer material coverage." },
+      {
+        title: "Certified installation",
+        desc: "Manufacturer-certified crews protect your material and labor warranty.",
+      },
+      {
+        title: "Premium materials",
+        desc: "Architectural, metal and membrane systems rated for 30–50+ years.",
+      },
+      {
+        title: "Energy efficiency",
+        desc: "Proper ventilation and reflective options lower attic heat and bills.",
+      },
+      {
+        title: "Written warranty",
+        desc: "Workmanship warranty plus full manufacturer material coverage.",
+      },
     ],
     process: [
-      { title: "Free inspection", desc: "We assess your roof, decking and ventilation and explain every option." },
-      { title: "Clear proposal", desc: "Transparent, written pricing with material and color choices." },
-      { title: "Expert installation", desc: "Protective prep, precise install, and constant quality checks." },
-      { title: "Final walkthrough", desc: "Magnetic nail sweep, cleanup and a complete quality review with you." },
+      {
+        title: "Free inspection",
+        desc: "We assess your roof, decking and ventilation and explain every option.",
+      },
+      {
+        title: "Clear proposal",
+        desc: "Transparent, written pricing with material and color choices.",
+      },
+      {
+        title: "Expert installation",
+        desc: "Protective prep, precise install, and constant quality checks.",
+      },
+      {
+        title: "Final walkthrough",
+        desc: "Magnetic nail sweep, cleanup and a complete quality review with you.",
+      },
     ],
     faqs: [
-      { q: "How long does a new roof last?", a: "Architectural shingles typically last 25–30 years, while metal and premium systems can protect your home for 50 years or more with proper installation and ventilation." },
-      { q: "Do you offer financing for a new roof?", a: "Yes. We offer flexible monthly payment plans with competitive rates and fast approval — often with no money down." },
-      { q: "Can you install a roof in winter?", a: "Yes. We install year-round and follow manufacturer cold-weather guidelines to ensure proper sealing and performance." },
-      { q: "Are you licensed and insured?", a: "Absolutely. We are fully licensed and insured for your complete protection on every project." },
+      {
+        q: "How long does a new roof last?",
+        a: "Architectural shingles typically last 25–30 years, while metal and premium systems can protect your home for 50 years or more with proper installation and ventilation.",
+      },
+      {
+        q: "Do you offer financing for a new roof?",
+        a: "Yes. We offer flexible monthly payment plans with competitive rates and fast approval — often with no money down.",
+      },
+      {
+        q: "Can you install a roof in winter?",
+        a: "Yes. We install year-round and follow manufacturer cold-weather guidelines to ensure proper sealing and performance.",
+      },
+      {
+        q: "Are you licensed and insured?",
+        a: "Absolutely. We are fully licensed and insured for your complete protection on every project.",
+      },
     ],
     related: ["roof-replacement", "roof-repair", "storm-damage-repair"],
   },
@@ -142,22 +178,49 @@ export const services: ServiceItem[] = [
       "From a handful of missing shingles after a windstorm to chronic leaks around chimneys and skylights, we deliver durable repairs with a fast response and a clear, honest assessment of whether repair or replacement makes more sense.",
     ],
     benefits: [
-      { title: "Root-cause diagnosis", desc: "We find where water really enters, not just where it shows up." },
-      { title: "Same-week service", desc: "Fast scheduling to protect your home before damage spreads." },
-      { title: "Honest advice", desc: "We tell you straight whether a repair or replacement is smarter." },
-      { title: "Guaranteed work", desc: "Every repair is backed by our written workmanship warranty." },
+      {
+        title: "Root-cause diagnosis",
+        desc: "We find where water really enters, not just where it shows up.",
+      },
+      {
+        title: "Same-week service",
+        desc: "Fast scheduling to protect your home before damage spreads.",
+      },
+      {
+        title: "Honest advice",
+        desc: "We tell you straight whether a repair or replacement is smarter.",
+      },
+      {
+        title: "Guaranteed work",
+        desc: "Every repair is backed by our written workmanship warranty.",
+      },
     ],
     process: [
       { title: "Leak inspection", desc: "Thorough diagnosis of the roof, attic and entry points." },
       { title: "Clear estimate", desc: "Straightforward pricing with no surprises or upsells." },
-      { title: "Precision repair", desc: "Quality materials matched to your existing roof system." },
+      {
+        title: "Precision repair",
+        desc: "Quality materials matched to your existing roof system.",
+      },
       { title: "Leak test & cleanup", desc: "We verify the fix and leave your property spotless." },
     ],
     faqs: [
-      { q: "How quickly can you repair my roof?", a: "We offer fast, often same-week scheduling, and emergency tarping is available to protect your home immediately after storm damage." },
-      { q: "Should I repair or replace my roof?", a: "It depends on age, extent of damage and decking condition. Our free inspection gives you an honest recommendation with no pressure." },
-      { q: "Will a repair match my existing shingles?", a: "We carefully match materials and color as closely as possible so repairs blend with your current roof." },
-      { q: "Do you help with insurance claims?", a: "Yes. We document storm-related damage and can support your insurance claim from start to finish." },
+      {
+        q: "How quickly can you repair my roof?",
+        a: "We offer fast, often same-week scheduling, and emergency tarping is available to protect your home immediately after storm damage.",
+      },
+      {
+        q: "Should I repair or replace my roof?",
+        a: "It depends on age, extent of damage and decking condition. Our free inspection gives you an honest recommendation with no pressure.",
+      },
+      {
+        q: "Will a repair match my existing shingles?",
+        a: "We carefully match materials and color as closely as possible so repairs blend with your current roof.",
+      },
+      {
+        q: "Do you help with insurance claims?",
+        a: "Yes. We document storm-related damage and can support your insurance claim from start to finish.",
+      },
     ],
     related: ["roof-replacement", "storm-damage-repair", "emergency-roofing"],
   },
@@ -182,22 +245,58 @@ export const services: ServiceItem[] = [
       "Most residential replacements are completed in a single day with careful property protection, premium underlayment, and a thorough magnetic nail sweep so your home is left cleaner than we found it.",
     ],
     benefits: [
-      { title: "Full system rebuild", desc: "New underlayment, ventilation and flashing — not just shingles." },
-      { title: "Boosts home value", desc: "A new roof improves curb appeal, resale value and insurability." },
-      { title: "One-day installs", desc: "Most homes are completed in a single day with minimal disruption." },
-      { title: "50-year options", desc: "Premium materials engineered for half a century of protection." },
+      {
+        title: "Full system rebuild",
+        desc: "New underlayment, ventilation and flashing — not just shingles.",
+      },
+      {
+        title: "Boosts home value",
+        desc: "A new roof improves curb appeal, resale value and insurability.",
+      },
+      {
+        title: "One-day installs",
+        desc: "Most homes are completed in a single day with minimal disruption.",
+      },
+      {
+        title: "50-year options",
+        desc: "Premium materials engineered for half a century of protection.",
+      },
     ],
     process: [
-      { title: "Inspection & quote", desc: "We assess your roof and present clear material and color options." },
-      { title: "Property protection", desc: "Landscaping and exteriors are protected before any tear-off." },
-      { title: "Tear-off & install", desc: "Complete removal, decking repair, and precise new installation." },
-      { title: "Cleanup & review", desc: "Magnetic nail sweep, full cleanup, and a final walkthrough." },
+      {
+        title: "Inspection & quote",
+        desc: "We assess your roof and present clear material and color options.",
+      },
+      {
+        title: "Property protection",
+        desc: "Landscaping and exteriors are protected before any tear-off.",
+      },
+      {
+        title: "Tear-off & install",
+        desc: "Complete removal, decking repair, and precise new installation.",
+      },
+      {
+        title: "Cleanup & review",
+        desc: "Magnetic nail sweep, full cleanup, and a final walkthrough.",
+      },
     ],
     faqs: [
-      { q: "How long does a roof replacement take?", a: "Most residential roof replacements are completed in a single day. Larger or complex roofs may take a bit longer — we provide a clear timeline up front." },
-      { q: "Will you replace damaged decking?", a: "Yes. Once the old roof is removed we inspect the decking and replace any damaged or rotted sections before installing your new roof." },
-      { q: "What financing is available?", a: "We offer flexible monthly payment plans with competitive rates and fast approval, often with no money down." },
-      { q: "How disruptive is the project?", a: "We protect your property, work efficiently, and clean thoroughly so most homeowners barely notice the disruption." },
+      {
+        q: "How long does a roof replacement take?",
+        a: "Most residential roof replacements are completed in a single day. Larger or complex roofs may take a bit longer — we provide a clear timeline up front.",
+      },
+      {
+        q: "Will you replace damaged decking?",
+        a: "Yes. Once the old roof is removed we inspect the decking and replace any damaged or rotted sections before installing your new roof.",
+      },
+      {
+        q: "What financing is available?",
+        a: "We offer flexible monthly payment plans with competitive rates and fast approval, often with no money down.",
+      },
+      {
+        q: "How disruptive is the project?",
+        a: "We protect your property, work efficiently, and clean thoroughly so most homeowners barely notice the disruption.",
+      },
     ],
     related: ["roofing", "roof-repair", "siding-installation"],
   },
@@ -222,22 +321,49 @@ export const services: ServiceItem[] = [
       "While we secure your home, we document all damage in detail to support your insurance claim, then build a plan for permanent repair or replacement once the emergency is contained.",
     ],
     benefits: [
-      { title: "Rapid response", desc: "Fast dispatch to secure your home and limit water damage." },
-      { title: "Emergency tarping", desc: "Professional temporary protection that holds until permanent repair." },
-      { title: "Claim documentation", desc: "Detailed photos and reports to strengthen your insurance claim." },
-      { title: "Permanent plan", desc: "A clear path to lasting repair or replacement after the emergency." },
+      {
+        title: "Rapid response",
+        desc: "Fast dispatch to secure your home and limit water damage.",
+      },
+      {
+        title: "Emergency tarping",
+        desc: "Professional temporary protection that holds until permanent repair.",
+      },
+      {
+        title: "Claim documentation",
+        desc: "Detailed photos and reports to strengthen your insurance claim.",
+      },
+      {
+        title: "Permanent plan",
+        desc: "A clear path to lasting repair or replacement after the emergency.",
+      },
     ],
     process: [
       { title: "Call & dispatch", desc: "Reach us and we mobilize a crew to protect your home." },
       { title: "Secure the roof", desc: "Emergency tarping and temporary measures stop the leak." },
       { title: "Document damage", desc: "Thorough records to support your insurance claim." },
-      { title: "Permanent repair", desc: "We schedule lasting repair or replacement once secured." },
+      {
+        title: "Permanent repair",
+        desc: "We schedule lasting repair or replacement once secured.",
+      },
     ],
     faqs: [
-      { q: "How fast can you get to my home?", a: "We prioritize emergencies and dispatch crews as quickly as possible to tarp and protect your roof before damage spreads." },
-      { q: "Will emergency tarping stop the leak?", a: "Professional tarping provides reliable temporary protection that keeps water out until a permanent repair can be completed." },
-      { q: "Do you handle the insurance side?", a: "Yes. We document all damage and can work with your adjuster to support a fair, full claim." },
-      { q: "What should I do while I wait?", a: "Move valuables away from the leak, place buckets to catch water, and avoid the affected area until our crew arrives." },
+      {
+        q: "How fast can you get to my home?",
+        a: "We prioritize emergencies and dispatch crews as quickly as possible to tarp and protect your roof before damage spreads.",
+      },
+      {
+        q: "Will emergency tarping stop the leak?",
+        a: "Professional tarping provides reliable temporary protection that keeps water out until a permanent repair can be completed.",
+      },
+      {
+        q: "Do you handle the insurance side?",
+        a: "Yes. We document all damage and can work with your adjuster to support a fair, full claim.",
+      },
+      {
+        q: "What should I do while I wait?",
+        a: "Move valuables away from the leak, place buckets to catch water, and avoid the affected area until our crew arrives.",
+      },
     ],
     related: ["storm-damage-repair", "roof-repair", "roof-replacement"],
   },
@@ -262,22 +388,43 @@ export const services: ServiceItem[] = [
       "We then handle the entire restoration — documenting damage, meeting your adjuster when possible, and advocating to ensure your claim is handled fairly so your home is fully restored.",
     ],
     benefits: [
-      { title: "Free assessment", desc: "A thorough, no-cost inspection to find all storm damage." },
+      {
+        title: "Free assessment",
+        desc: "A thorough, no-cost inspection to find all storm damage.",
+      },
       { title: "Insurance advocacy", desc: "We document and advocate for a fair, complete claim." },
-      { title: "Full restoration", desc: "Roof, siding, gutters and exterior — restored by one team." },
+      {
+        title: "Full restoration",
+        desc: "Roof, siding, gutters and exterior — restored by one team.",
+      },
       { title: "Local experts", desc: "We know local storm patterns and what adjusters look for." },
     ],
     process: [
       { title: "Free inspection", desc: "Detailed documentation of all hail and wind damage." },
       { title: "Claim support", desc: "We help file and meet with your adjuster when possible." },
       { title: "Approved scope", desc: "We confirm the approved repairs and material selections." },
-      { title: "Complete restoration", desc: "Expert repair or replacement and a final walkthrough." },
+      {
+        title: "Complete restoration",
+        desc: "Expert repair or replacement and a final walkthrough.",
+      },
     ],
     faqs: [
-      { q: "How do I know if I have storm damage?", a: "Much hail and wind damage is invisible from the ground. Our free inspection identifies bruising, cracks and lifted shingles before they cause leaks." },
-      { q: "Will you work with my insurance company?", a: "Yes. We document the damage, meet with your adjuster when possible, and advocate to ensure your claim is handled fairly and fully." },
-      { q: "How long do I have to file a claim?", a: "Most policies have a filing window after a storm, so it's best to get inspected promptly. We can help you act before deadlines pass." },
-      { q: "What if my claim is denied?", a: "We can provide detailed documentation and a professional assessment to support a re-inspection or appeal of an unfair denial." },
+      {
+        q: "How do I know if I have storm damage?",
+        a: "Much hail and wind damage is invisible from the ground. Our free inspection identifies bruising, cracks and lifted shingles before they cause leaks.",
+      },
+      {
+        q: "Will you work with my insurance company?",
+        a: "Yes. We document the damage, meet with your adjuster when possible, and advocate to ensure your claim is handled fairly and fully.",
+      },
+      {
+        q: "How long do I have to file a claim?",
+        a: "Most policies have a filing window after a storm, so it's best to get inspected promptly. We can help you act before deadlines pass.",
+      },
+      {
+        q: "What if my claim is denied?",
+        a: "We can provide detailed documentation and a professional assessment to support a re-inspection or appeal of an unfair denial.",
+      },
     ],
     related: ["emergency-roofing", "roof-replacement", "gutter-repair"],
   },
@@ -302,22 +449,49 @@ export const services: ServiceItem[] = [
       "Our crews handle proper moisture barriers, insulation and flashing details so your new siding doesn't just look stunning — it protects and performs for decades.",
     ],
     benefits: [
-      { title: "Major curb appeal", desc: "Refresh your home's entire look with modern colors and textures." },
-      { title: "Better efficiency", desc: "Insulated options reduce drafts and lower energy bills." },
+      {
+        title: "Major curb appeal",
+        desc: "Refresh your home's entire look with modern colors and textures.",
+      },
+      {
+        title: "Better efficiency",
+        desc: "Insulated options reduce drafts and lower energy bills.",
+      },
       { title: "Low maintenance", desc: "Durable materials that resist rot, pests and fading." },
-      { title: "Higher resale", desc: "New siding is one of the top return-on-investment upgrades." },
+      {
+        title: "Higher resale",
+        desc: "New siding is one of the top return-on-investment upgrades.",
+      },
     ],
     process: [
-      { title: "Design consult", desc: "We help you choose materials, styles and colors that fit your home." },
+      {
+        title: "Design consult",
+        desc: "We help you choose materials, styles and colors that fit your home.",
+      },
       { title: "Detailed quote", desc: "Clear, written pricing with all materials specified." },
-      { title: "Precision install", desc: "Proper moisture barriers, insulation and flashing details." },
+      {
+        title: "Precision install",
+        desc: "Proper moisture barriers, insulation and flashing details.",
+      },
       { title: "Final walkthrough", desc: "Full cleanup and a complete quality review with you." },
     ],
     faqs: [
-      { q: "Which siding material is best?", a: "Fiber cement offers premium durability and a wood-like look, while vinyl is cost-effective and low-maintenance. We'll help you choose based on budget and goals." },
-      { q: "Will new siding lower my energy bills?", a: "Insulated siding options reduce drafts and improve your home's thermal envelope, which can meaningfully lower heating and cooling costs." },
-      { q: "How long does siding installation take?", a: "Most homes are completed within several days depending on size and material. We'll provide a clear timeline before we begin." },
-      { q: "Can you match my existing siding?", a: "Yes, we offer a wide range of colors and profiles and will match new work to your home as closely as possible." },
+      {
+        q: "Which siding material is best?",
+        a: "Fiber cement offers premium durability and a wood-like look, while vinyl is cost-effective and low-maintenance. We'll help you choose based on budget and goals.",
+      },
+      {
+        q: "Will new siding lower my energy bills?",
+        a: "Insulated siding options reduce drafts and improve your home's thermal envelope, which can meaningfully lower heating and cooling costs.",
+      },
+      {
+        q: "How long does siding installation take?",
+        a: "Most homes are completed within several days depending on size and material. We'll provide a clear timeline before we begin.",
+      },
+      {
+        q: "Can you match my existing siding?",
+        a: "Yes, we offer a wide range of colors and profiles and will match new work to your home as closely as possible.",
+      },
     ],
     related: ["siding-repair", "window-installation", "gutter-installation"],
   },
@@ -342,22 +516,43 @@ export const services: ServiceItem[] = [
       "We carefully match materials and color so repairs blend in, and we make sure the moisture barrier behind your siding is restored to keep your home protected.",
     ],
     benefits: [
-      { title: "Stops moisture", desc: "Restores the weather barrier protecting your walls and framing." },
+      {
+        title: "Stops moisture",
+        desc: "Restores the weather barrier protecting your walls and framing.",
+      },
       { title: "Color matched", desc: "Repairs blend seamlessly with your existing siding." },
       { title: "Fast service", desc: "Quick scheduling to prevent further water damage." },
-      { title: "Storm ready", desc: "We repair wind, hail and impact damage and document it for claims." },
+      {
+        title: "Storm ready",
+        desc: "We repair wind, hail and impact damage and document it for claims.",
+      },
     ],
     process: [
       { title: "Assessment", desc: "We inspect the damage and the moisture barrier behind it." },
-      { title: "Clear estimate", desc: "Honest pricing and a recommendation on repair vs. replacement." },
+      {
+        title: "Clear estimate",
+        desc: "Honest pricing and a recommendation on repair vs. replacement.",
+      },
       { title: "Matched repair", desc: "We replace damaged panels and match color and texture." },
       { title: "Cleanup & review", desc: "A tidy finish and a final walkthrough with you." },
     ],
     faqs: [
-      { q: "Can damaged siding be repaired or must it be replaced?", a: "Many issues can be repaired by replacing affected panels. If damage is widespread, we'll honestly advise whether replacement is more cost-effective." },
-      { q: "Will the repair be noticeable?", a: "We match material, profile and color as closely as possible so repairs blend with your existing siding." },
-      { q: "Do you repair storm-damaged siding?", a: "Yes. We repair wind, hail and impact damage and document it to support insurance claims when applicable." },
-      { q: "How soon should I repair siding?", a: "Promptly — gaps and cracks let moisture reach your framing, so quick repair prevents far costlier rot and mold damage." },
+      {
+        q: "Can damaged siding be repaired or must it be replaced?",
+        a: "Many issues can be repaired by replacing affected panels. If damage is widespread, we'll honestly advise whether replacement is more cost-effective.",
+      },
+      {
+        q: "Will the repair be noticeable?",
+        a: "We match material, profile and color as closely as possible so repairs blend with your existing siding.",
+      },
+      {
+        q: "Do you repair storm-damaged siding?",
+        a: "Yes. We repair wind, hail and impact damage and document it to support insurance claims when applicable.",
+      },
+      {
+        q: "How soon should I repair siding?",
+        a: "Promptly — gaps and cracks let moisture reach your framing, so quick repair prevents far costlier rot and mold damage.",
+      },
     ],
     related: ["siding-installation", "storm-damage-repair", "gutter-repair"],
   },
@@ -382,9 +577,15 @@ export const services: ServiceItem[] = [
       "Our seamless aluminum gutters are custom-fabricated on site for a precise fit with fewer leaks, and our leaf-guard options keep them flowing freely with far less maintenance.",
     ],
     benefits: [
-      { title: "Foundation protection", desc: "Channels water away to prevent costly foundation damage." },
+      {
+        title: "Foundation protection",
+        desc: "Channels water away to prevent costly foundation damage.",
+      },
       { title: "Seamless fit", desc: "On-site fabrication means fewer joints and fewer leaks." },
-      { title: "Less maintenance", desc: "Leaf-guard systems keep gutters flowing with less cleaning." },
+      {
+        title: "Less maintenance",
+        desc: "Leaf-guard systems keep gutters flowing with less cleaning.",
+      },
       { title: "Custom design", desc: "Sized and placed for your exact roofline and rainfall." },
     ],
     process: [
@@ -394,10 +595,22 @@ export const services: ServiceItem[] = [
       { title: "Flow test", desc: "We verify proper drainage and clean up completely." },
     ],
     faqs: [
-      { q: "Why choose seamless gutters?", a: "Seamless gutters are fabricated on site to fit your home with far fewer joints, which means fewer leaks and a cleaner appearance." },
-      { q: "Are leaf guards worth it?", a: "Yes. Quality leaf-guard systems dramatically reduce clogs and cleaning while keeping water flowing freely, especially under heavy tree cover." },
-      { q: "How often should gutters be replaced?", a: "Well-installed aluminum gutters can last 20 years or more. We'll assess whether cleaning, repair or replacement is the right step." },
-      { q: "Do clogged gutters really cause damage?", a: "Absolutely. Overflowing gutters lead to fascia rot, siding stains, basement leaks and foundation problems — all far costlier than gutter care." },
+      {
+        q: "Why choose seamless gutters?",
+        a: "Seamless gutters are fabricated on site to fit your home with far fewer joints, which means fewer leaks and a cleaner appearance.",
+      },
+      {
+        q: "Are leaf guards worth it?",
+        a: "Yes. Quality leaf-guard systems dramatically reduce clogs and cleaning while keeping water flowing freely, especially under heavy tree cover.",
+      },
+      {
+        q: "How often should gutters be replaced?",
+        a: "Well-installed aluminum gutters can last 20 years or more. We'll assess whether cleaning, repair or replacement is the right step.",
+      },
+      {
+        q: "Do clogged gutters really cause damage?",
+        a: "Absolutely. Overflowing gutters lead to fascia rot, siding stains, basement leaks and foundation problems — all far costlier than gutter care.",
+      },
     ],
     related: ["gutter-installation", "gutter-repair", "roofing"],
   },
@@ -424,7 +637,10 @@ export const services: ServiceItem[] = [
     benefits: [
       { title: "Seamless aluminum", desc: "Fabricated on site for a precise, leak-resistant fit." },
       { title: "Correct sizing", desc: "Engineered for your roof area and local rainfall volume." },
-      { title: "Proper drainage", desc: "Downspouts placed to carry water safely away from the home." },
+      {
+        title: "Proper drainage",
+        desc: "Downspouts placed to carry water safely away from the home.",
+      },
       { title: "Guard-ready", desc: "Built to accept leaf-guard systems for easy maintenance." },
     ],
     process: [
@@ -434,10 +650,22 @@ export const services: ServiceItem[] = [
       { title: "Flow test", desc: "We confirm drainage and leave your property clean." },
     ],
     faqs: [
-      { q: "How long does gutter installation take?", a: "Most homes are completed in a single day. We fabricate seamless gutters on site for a precise fit." },
-      { q: "What size gutters do I need?", a: "It depends on your roof area and local rainfall. We size your system to handle heavy downpours without overflow." },
-      { q: "Can you add leaf guards during installation?", a: "Yes. We can install leaf-guard systems with your new gutters to reduce future clogs and cleaning." },
-      { q: "What gutter material do you use?", a: "We primarily install durable seamless aluminum, which resists rust and offers an excellent balance of longevity and value." },
+      {
+        q: "How long does gutter installation take?",
+        a: "Most homes are completed in a single day. We fabricate seamless gutters on site for a precise fit.",
+      },
+      {
+        q: "What size gutters do I need?",
+        a: "It depends on your roof area and local rainfall. We size your system to handle heavy downpours without overflow.",
+      },
+      {
+        q: "Can you add leaf guards during installation?",
+        a: "Yes. We can install leaf-guard systems with your new gutters to reduce future clogs and cleaning.",
+      },
+      {
+        q: "What gutter material do you use?",
+        a: "We primarily install durable seamless aluminum, which resists rust and offers an excellent balance of longevity and value.",
+      },
     ],
     related: ["gutters", "gutter-repair", "roof-replacement"],
   },
@@ -462,9 +690,18 @@ export const services: ServiceItem[] = [
       "Our team re-pitches and re-secures gutters, seals leaks, and clears blockages so your system protects your home the way it should.",
     ],
     benefits: [
-      { title: "Stops overflow", desc: "Repairs restore proper flow to protect siding and foundation." },
-      { title: "Seam sealing", desc: "We seal leaks and reconnect joints for a watertight system." },
-      { title: "Re-secure & re-pitch", desc: "Correcting sag and pitch keeps water moving to downspouts." },
+      {
+        title: "Stops overflow",
+        desc: "Repairs restore proper flow to protect siding and foundation.",
+      },
+      {
+        title: "Seam sealing",
+        desc: "We seal leaks and reconnect joints for a watertight system.",
+      },
+      {
+        title: "Re-secure & re-pitch",
+        desc: "Correcting sag and pitch keeps water moving to downspouts.",
+      },
       { title: "Fast turnaround", desc: "Quick scheduling before the next heavy rain." },
     ],
     process: [
@@ -474,10 +711,22 @@ export const services: ServiceItem[] = [
       { title: "Flow test", desc: "We confirm proper drainage and clean up." },
     ],
     faqs: [
-      { q: "Can my gutters be repaired or do I need new ones?", a: "Many problems — leaks, sag, loose downspouts — are easily repaired. If gutters are widely corroded, we'll honestly recommend replacement." },
-      { q: "Why are my gutters overflowing?", a: "Usually clogs, improper pitch, or undersized gutters. We diagnose the cause and restore proper flow." },
-      { q: "Do you clear clogs too?", a: "Yes. We clear blockages in gutters and downspouts as part of restoring proper drainage." },
-      { q: "How fast can you come out?", a: "We offer quick scheduling, especially ahead of forecast storms, to protect your home from water damage." },
+      {
+        q: "Can my gutters be repaired or do I need new ones?",
+        a: "Many problems — leaks, sag, loose downspouts — are easily repaired. If gutters are widely corroded, we'll honestly recommend replacement.",
+      },
+      {
+        q: "Why are my gutters overflowing?",
+        a: "Usually clogs, improper pitch, or undersized gutters. We diagnose the cause and restore proper flow.",
+      },
+      {
+        q: "Do you clear clogs too?",
+        a: "Yes. We clear blockages in gutters and downspouts as part of restoring proper drainage.",
+      },
+      {
+        q: "How fast can you come out?",
+        a: "We offer quick scheduling, especially ahead of forecast storms, to protect your home from water damage.",
+      },
     ],
     related: ["gutters", "gutter-installation", "storm-damage-repair"],
   },
@@ -502,22 +751,40 @@ export const services: ServiceItem[] = [
       "Proper installation is everything: we ensure square, level, fully sealed and insulated fits so your new windows perform exactly as they should.",
     ],
     benefits: [
-      { title: "Lower energy bills", desc: "Efficient glass and tight seals reduce heating and cooling costs." },
+      {
+        title: "Lower energy bills",
+        desc: "Efficient glass and tight seals reduce heating and cooling costs.",
+      },
       { title: "More comfort", desc: "Fewer drafts and hot spots throughout your home." },
       { title: "Quieter rooms", desc: "Insulated glass cuts outside noise significantly." },
       { title: "Fresh look", desc: "New windows instantly modernize your home inside and out." },
     ],
     process: [
-      { title: "Measure & select", desc: "Precise measurements and help choosing styles and glass." },
+      {
+        title: "Measure & select",
+        desc: "Precise measurements and help choosing styles and glass.",
+      },
       { title: "Clear quote", desc: "Transparent pricing with all options specified." },
       { title: "Professional install", desc: "Square, level, sealed and fully insulated fits." },
       { title: "Final review", desc: "We test operation, clean up and walk through with you." },
     ],
     faqs: [
-      { q: "Will new windows really lower my bills?", a: "Yes. Energy-efficient glass and a properly sealed installation reduce drafts and heat transfer, which can meaningfully cut energy costs." },
-      { q: "Double-pane or triple-pane?", a: "Double-pane suits most homes, while triple-pane adds extra efficiency and sound reduction in harsh climates or noisy locations." },
-      { q: "How long does installation take?", a: "Many window projects are completed in a day or two depending on the number of windows. We'll provide a clear timeline up front." },
-      { q: "Do you install custom sizes?", a: "Yes. We measure precisely and order windows custom-sized to your existing openings for a perfect fit." },
+      {
+        q: "Will new windows really lower my bills?",
+        a: "Yes. Energy-efficient glass and a properly sealed installation reduce drafts and heat transfer, which can meaningfully cut energy costs.",
+      },
+      {
+        q: "Double-pane or triple-pane?",
+        a: "Double-pane suits most homes, while triple-pane adds extra efficiency and sound reduction in harsh climates or noisy locations.",
+      },
+      {
+        q: "How long does installation take?",
+        a: "Many window projects are completed in a day or two depending on the number of windows. We'll provide a clear timeline up front.",
+      },
+      {
+        q: "Do you install custom sizes?",
+        a: "Yes. We measure precisely and order windows custom-sized to your existing openings for a perfect fit.",
+      },
     ],
     related: ["window-replacement", "siding-installation", "roofing"],
   },
@@ -543,21 +810,45 @@ export const services: ServiceItem[] = [
     ],
     benefits: [
       { title: "End the drafts", desc: "Tight new seals stop the drafts old windows let in." },
-      { title: "Clear views again", desc: "Replace foggy, seal-failed glass with crisp, clear panes." },
-      { title: "Energy savings", desc: "Efficient units lower heating and cooling costs year-round." },
+      {
+        title: "Clear views again",
+        desc: "Replace foggy, seal-failed glass with crisp, clear panes.",
+      },
+      {
+        title: "Energy savings",
+        desc: "Efficient units lower heating and cooling costs year-round.",
+      },
       { title: "Warranty options", desc: "Lifetime warranty options available on quality units." },
     ],
     process: [
       { title: "Assessment", desc: "We evaluate your existing windows and openings." },
       { title: "Selection & quote", desc: "Choose styles and glass with clear, written pricing." },
-      { title: "Removal & install", desc: "Old units out, frames corrected, new windows sealed in." },
-      { title: "Final walkthrough", desc: "We test operation, clean up and review the work with you." },
+      {
+        title: "Removal & install",
+        desc: "Old units out, frames corrected, new windows sealed in.",
+      },
+      {
+        title: "Final walkthrough",
+        desc: "We test operation, clean up and review the work with you.",
+      },
     ],
     faqs: [
-      { q: "When should I replace rather than repair windows?", a: "If windows are drafty, fogging between panes, hard to operate, or single-pane, replacement usually delivers far better comfort and energy savings than repair." },
-      { q: "Why are my windows foggy inside the glass?", a: "Fogging between panes means the seal has failed and the insulating gas has escaped. The unit should be replaced to restore efficiency and clarity." },
-      { q: "Will replacement windows match my home?", a: "Yes. We offer a wide range of styles, colors and grille options to complement your home's architecture." },
-      { q: "Is there a warranty?", a: "Yes. We offer lifetime warranty options on quality window units plus our workmanship guarantee on the installation." },
+      {
+        q: "When should I replace rather than repair windows?",
+        a: "If windows are drafty, fogging between panes, hard to operate, or single-pane, replacement usually delivers far better comfort and energy savings than repair.",
+      },
+      {
+        q: "Why are my windows foggy inside the glass?",
+        a: "Fogging between panes means the seal has failed and the insulating gas has escaped. The unit should be replaced to restore efficiency and clarity.",
+      },
+      {
+        q: "Will replacement windows match my home?",
+        a: "Yes. We offer a wide range of styles, colors and grille options to complement your home's architecture.",
+      },
+      {
+        q: "Is there a warranty?",
+        a: "Yes. We offer lifetime warranty options on quality window units plus our workmanship guarantee on the installation.",
+      },
     ],
     related: ["window-installation", "siding-repair", "roof-replacement"],
   },
@@ -582,25 +873,55 @@ export const services: ServiceItem[] = [
       "By diagnosing the true cause — whether it's failed flashing, a cracked boot, a valley issue or nail pops — we make sure the repair solves the problem the first time instead of chasing symptoms.",
     ],
     benefits: [
-      { title: "True-source diagnosis", desc: "We find where water really enters, not just where it shows." },
-      { title: "Non-invasive tools", desc: "Infrared and moisture meters locate leaks without tearing up your roof." },
+      {
+        title: "True-source diagnosis",
+        desc: "We find where water really enters, not just where it shows.",
+      },
+      {
+        title: "Non-invasive tools",
+        desc: "Infrared and moisture meters locate leaks without tearing up your roof.",
+      },
       { title: "Detailed report", desc: "Clear documentation with photos of every problem area." },
-      { title: "Prevents big damage", desc: "Early detection stops rot, mold and structural damage." },
+      {
+        title: "Prevents big damage",
+        desc: "Early detection stops rot, mold and structural damage.",
+      },
       { title: "Insurance-ready", desc: "Findings documented to support storm or damage claims." },
     ],
     process: [
-      { title: "Interior review", desc: "We inspect stains, the attic and entry points from inside." },
+      {
+        title: "Interior review",
+        desc: "We inspect stains, the attic and entry points from inside.",
+      },
       { title: "Roof scan", desc: "Infrared and moisture mapping across the roof surface." },
       { title: "Pinpoint source", desc: "We isolate the exact failure causing the leak." },
       { title: "Repair plan", desc: "A clear, prioritized plan to fix it for good." },
     ],
     faqs: [
-      { q: "Why is my ceiling stain far from the actual leak?", a: "Water travels along decking and rafters before dripping, so the stain is often well away from the true entry point. That's why professional tracing matters." },
-      { q: "How do you detect leaks without damaging my roof?", a: "We use non-invasive infrared cameras and moisture meters to map wet areas, plus attic tracing, before recommending any repair." },
-      { q: "Can you find a leak even if it's not raining?", a: "Yes. We can perform controlled water testing and use moisture readings to locate active and intermittent leaks." },
-      { q: "Will you fix the leak too?", a: "Absolutely. Detection is the first step — we provide a clear repair plan and complete the work with our workmanship warranty." },
-      { q: "How much does leak detection cost?", a: "It depends on roof size and complexity. We provide transparent pricing up front and often credit it toward the repair." },
-      { q: "Do you document findings for insurance?", a: "Yes. We provide a detailed report with photos that can support an insurance claim when damage is storm-related." },
+      {
+        q: "Why is my ceiling stain far from the actual leak?",
+        a: "Water travels along decking and rafters before dripping, so the stain is often well away from the true entry point. That's why professional tracing matters.",
+      },
+      {
+        q: "How do you detect leaks without damaging my roof?",
+        a: "We use non-invasive infrared cameras and moisture meters to map wet areas, plus attic tracing, before recommending any repair.",
+      },
+      {
+        q: "Can you find a leak even if it's not raining?",
+        a: "Yes. We can perform controlled water testing and use moisture readings to locate active and intermittent leaks.",
+      },
+      {
+        q: "Will you fix the leak too?",
+        a: "Absolutely. Detection is the first step — we provide a clear repair plan and complete the work with our workmanship warranty.",
+      },
+      {
+        q: "How much does leak detection cost?",
+        a: "It depends on roof size and complexity. We provide transparent pricing up front and often credit it toward the repair.",
+      },
+      {
+        q: "Do you document findings for insurance?",
+        a: "Yes. We provide a detailed report with photos that can support an insurance claim when damage is storm-related.",
+      },
     ],
     related: ["roof-repair", "roof-inspection", "storm-damage-repair"],
   },
@@ -625,25 +946,64 @@ export const services: ServiceItem[] = [
       "The difference is in the details: tapered insulation for positive drainage, fully sealed seams, and reinforced flashing at every penetration so your flat roof stays dry and energy efficient for decades.",
     ],
     benefits: [
-      { title: "Watertight seams", desc: "Heat-welded and sealed seams eliminate the most common leak points." },
-      { title: "Proper drainage", desc: "Tapered insulation prevents ponding and extends roof life." },
-      { title: "Energy efficient", desc: "Reflective membranes lower cooling costs on sun-exposed roofs." },
+      {
+        title: "Watertight seams",
+        desc: "Heat-welded and sealed seams eliminate the most common leak points.",
+      },
+      {
+        title: "Proper drainage",
+        desc: "Tapered insulation prevents ponding and extends roof life.",
+      },
+      {
+        title: "Energy efficient",
+        desc: "Reflective membranes lower cooling costs on sun-exposed roofs.",
+      },
       { title: "Low maintenance", desc: "Modern membranes resist UV, weather and foot traffic." },
-      { title: "Versatile", desc: "Ideal for additions, garages, modern homes and commercial buildings." },
+      {
+        title: "Versatile",
+        desc: "Ideal for additions, garages, modern homes and commercial buildings.",
+      },
     ],
     process: [
       { title: "Roof assessment", desc: "We evaluate slope, drainage and the existing deck." },
-      { title: "System design", desc: "We specify the right membrane and insulation for your building." },
-      { title: "Professional install", desc: "Sealed seams, reinforced flashing and proper slope." },
-      { title: "Water test & review", desc: "We confirm drainage and walk the finished roof with you." },
+      {
+        title: "System design",
+        desc: "We specify the right membrane and insulation for your building.",
+      },
+      {
+        title: "Professional install",
+        desc: "Sealed seams, reinforced flashing and proper slope.",
+      },
+      {
+        title: "Water test & review",
+        desc: "We confirm drainage and walk the finished roof with you.",
+      },
     ],
     faqs: [
-      { q: "What is the best flat roof material?", a: "TPO and EPDM are both excellent. TPO offers reflective energy savings, while EPDM is highly durable and flexible. We recommend the best fit for your building and budget." },
-      { q: "How long does a flat roof last?", a: "A professionally installed membrane flat roof typically lasts 20–30 years with proper drainage and minimal maintenance." },
-      { q: "Why does my flat roof pool water?", a: "Ponding usually means inadequate slope or clogged drainage. We install tapered insulation to create positive drainage and eliminate standing water." },
-      { q: "Can a flat roof be installed on a home?", a: "Yes. Flat and low-slope membranes are ideal for modern homes, additions, porches and garages — not just commercial buildings." },
-      { q: "Are flat roofs energy efficient?", a: "Reflective membranes like white TPO reduce heat absorption and can meaningfully lower cooling costs in sunny climates." },
-      { q: "Do you install commercial flat roofs?", a: "Yes. We handle both residential and commercial flat-roof installation with systems sized for the building's needs." },
+      {
+        q: "What is the best flat roof material?",
+        a: "TPO and EPDM are both excellent. TPO offers reflective energy savings, while EPDM is highly durable and flexible. We recommend the best fit for your building and budget.",
+      },
+      {
+        q: "How long does a flat roof last?",
+        a: "A professionally installed membrane flat roof typically lasts 20–30 years with proper drainage and minimal maintenance.",
+      },
+      {
+        q: "Why does my flat roof pool water?",
+        a: "Ponding usually means inadequate slope or clogged drainage. We install tapered insulation to create positive drainage and eliminate standing water.",
+      },
+      {
+        q: "Can a flat roof be installed on a home?",
+        a: "Yes. Flat and low-slope membranes are ideal for modern homes, additions, porches and garages — not just commercial buildings.",
+      },
+      {
+        q: "Are flat roofs energy efficient?",
+        a: "Reflective membranes like white TPO reduce heat absorption and can meaningfully lower cooling costs in sunny climates.",
+      },
+      {
+        q: "Do you install commercial flat roofs?",
+        a: "Yes. We handle both residential and commercial flat-roof installation with systems sized for the building's needs.",
+      },
     ],
     related: ["commercial-roofing", "roof-replacement", "roof-inspection"],
   },
@@ -670,9 +1030,15 @@ export const services: ServiceItem[] = [
     benefits: [
       { title: "Lower energy bills", desc: "Stops heat loss in winter and heat gain in summer." },
       { title: "Even comfort", desc: "Eliminates hot and cold rooms throughout your home." },
-      { title: "Ice-dam defense", desc: "Proper insulation and ventilation prevent damaging ice dams." },
+      {
+        title: "Ice-dam defense",
+        desc: "Proper insulation and ventilation prevent damaging ice dams.",
+      },
       { title: "Quieter home", desc: "Added insulation also dampens outside noise." },
-      { title: "Protects your roof", desc: "Balanced temperature and airflow extend shingle life." },
+      {
+        title: "Protects your roof",
+        desc: "Balanced temperature and airflow extend shingle life.",
+      },
     ],
     process: [
       { title: "Energy assessment", desc: "We evaluate insulation, ventilation and air leaks." },
@@ -681,12 +1047,30 @@ export const services: ServiceItem[] = [
       { title: "Final check", desc: "We verify coverage and tidy up completely." },
     ],
     faqs: [
-      { q: "How do I know if my roof needs more insulation?", a: "Signs include high energy bills, uneven room temperatures, ice dams in winter and a hot attic in summer. A quick assessment confirms what you need." },
-      { q: "Will insulation really lower my energy bills?", a: "Yes. Proper roof and attic insulation is one of the most cost-effective efficiency upgrades, often paying for itself in energy savings over time." },
-      { q: "Does insulation help prevent ice dams?", a: "Absolutely. Combined with proper ventilation, insulation keeps the roof deck cold and even, which prevents the melt-refreeze cycle that causes ice dams." },
-      { q: "What insulation type do you use?", a: "We select the best material and R-value for your home, whether blown-in, batt or a combination, based on your attic and goals." },
-      { q: "Do I need ventilation with insulation?", a: "Yes. Insulation and ventilation work together — we make sure airflow is balanced so moisture doesn't get trapped." },
-      { q: "Is roof insulation messy to install?", a: "We protect your home, work cleanly and fully clean up afterward, so installation is fast and hassle-free." },
+      {
+        q: "How do I know if my roof needs more insulation?",
+        a: "Signs include high energy bills, uneven room temperatures, ice dams in winter and a hot attic in summer. A quick assessment confirms what you need.",
+      },
+      {
+        q: "Will insulation really lower my energy bills?",
+        a: "Yes. Proper roof and attic insulation is one of the most cost-effective efficiency upgrades, often paying for itself in energy savings over time.",
+      },
+      {
+        q: "Does insulation help prevent ice dams?",
+        a: "Absolutely. Combined with proper ventilation, insulation keeps the roof deck cold and even, which prevents the melt-refreeze cycle that causes ice dams.",
+      },
+      {
+        q: "What insulation type do you use?",
+        a: "We select the best material and R-value for your home, whether blown-in, batt or a combination, based on your attic and goals.",
+      },
+      {
+        q: "Do I need ventilation with insulation?",
+        a: "Yes. Insulation and ventilation work together — we make sure airflow is balanced so moisture doesn't get trapped.",
+      },
+      {
+        q: "Is roof insulation messy to install?",
+        a: "We protect your home, work cleanly and fully clean up afterward, so installation is fast and hassle-free.",
+      },
     ],
     related: ["roof-ventilation", "roof-inspection", "roofing"],
   },
@@ -711,25 +1095,52 @@ export const services: ServiceItem[] = [
       "You receive clear, photo-documented findings and an honest recommendation — whether that's routine maintenance, a targeted repair, or simply peace of mind that your roof is in great shape.",
     ],
     benefits: [
-      { title: "Catch issues early", desc: "Find small problems before they turn into costly damage." },
+      {
+        title: "Catch issues early",
+        desc: "Find small problems before they turn into costly damage.",
+      },
       { title: "Photo documentation", desc: "See exactly what we see with clear, labeled photos." },
-      { title: "Honest advice", desc: "No scare tactics — just a straight assessment of your roof." },
+      {
+        title: "Honest advice",
+        desc: "No scare tactics — just a straight assessment of your roof.",
+      },
       { title: "Sale-ready", desc: "Ideal for buyers, sellers and pre-listing peace of mind." },
       { title: "Claim support", desc: "Storm-damage documentation to support insurance claims." },
     ],
     process: [
-      { title: "Exterior inspection", desc: "We assess shingles, flashing, valleys, vents and penetrations." },
+      {
+        title: "Exterior inspection",
+        desc: "We assess shingles, flashing, valleys, vents and penetrations.",
+      },
       { title: "Attic & interior", desc: "We check for moisture, ventilation and decking issues." },
       { title: "Photo report", desc: "Clear documentation of findings and their severity." },
       { title: "Recommendations", desc: "An honest, prioritized plan — no pressure." },
     ],
     faqs: [
-      { q: "How often should I have my roof inspected?", a: "We recommend a professional inspection at least once a year and always after a major storm to catch damage early." },
-      { q: "What's included in a roof inspection?", a: "We inspect shingles, flashing, valleys, vents, gutters and the attic, then provide a photo-documented report with honest recommendations." },
-      { q: "Do I need an inspection before selling my home?", a: "Yes, a pre-listing inspection reassures buyers and helps avoid surprises during the sale. We provide documentation you can share." },
-      { q: "Will you try to upsell me a new roof?", a: "Never. We give honest findings — if your roof just needs maintenance or a small repair, that's exactly what we'll tell you." },
-      { q: "Can an inspection help with an insurance claim?", a: "Yes. After a storm we document damage in detail, which strengthens your claim with the adjuster." },
-      { q: "How long does an inspection take?", a: "Most residential inspections take under an hour, after which we review the photo report and findings with you." },
+      {
+        q: "How often should I have my roof inspected?",
+        a: "We recommend a professional inspection at least once a year and always after a major storm to catch damage early.",
+      },
+      {
+        q: "What's included in a roof inspection?",
+        a: "We inspect shingles, flashing, valleys, vents, gutters and the attic, then provide a photo-documented report with honest recommendations.",
+      },
+      {
+        q: "Do I need an inspection before selling my home?",
+        a: "Yes, a pre-listing inspection reassures buyers and helps avoid surprises during the sale. We provide documentation you can share.",
+      },
+      {
+        q: "Will you try to upsell me a new roof?",
+        a: "Never. We give honest findings — if your roof just needs maintenance or a small repair, that's exactly what we'll tell you.",
+      },
+      {
+        q: "Can an inspection help with an insurance claim?",
+        a: "Yes. After a storm we document damage in detail, which strengthens your claim with the adjuster.",
+      },
+      {
+        q: "How long does an inspection take?",
+        a: "Most residential inspections take under an hour, after which we review the photo report and findings with you.",
+      },
     ],
     related: ["roof-repair", "leak-detection", "roof-maintenance"],
   },
@@ -767,12 +1178,30 @@ export const services: ServiceItem[] = [
       { title: "Performance check", desc: "We confirm balanced airflow and tidy up." },
     ],
     faqs: [
-      { q: "Why is roof ventilation important?", a: "It controls attic heat and moisture, which protects your shingles, prevents mold and ice dams, and lowers energy bills." },
-      { q: "What are signs of poor ventilation?", a: "A hot attic, high cooling bills, moisture or frost in the attic, mold smell and premature shingle aging all point to poor ventilation." },
-      { q: "What's the difference between intake and exhaust vents?", a: "Intake vents (usually at the soffits) draw in fresh air, while exhaust vents (usually at the ridge) release hot air. Balance between them is key." },
-      { q: "Will better ventilation lower my energy bills?", a: "Yes. By exhausting trapped heat, proper ventilation reduces cooling costs and eases the load on your HVAC system." },
-      { q: "Can ventilation prevent ice dams?", a: "Combined with insulation, balanced ventilation keeps the roof deck cold and even, which helps prevent the melting that causes ice dams." },
-      { q: "Do you add ventilation during a re-roof?", a: "Yes. A roof replacement is the ideal time to correct and upgrade ventilation as part of the complete system." },
+      {
+        q: "Why is roof ventilation important?",
+        a: "It controls attic heat and moisture, which protects your shingles, prevents mold and ice dams, and lowers energy bills.",
+      },
+      {
+        q: "What are signs of poor ventilation?",
+        a: "A hot attic, high cooling bills, moisture or frost in the attic, mold smell and premature shingle aging all point to poor ventilation.",
+      },
+      {
+        q: "What's the difference between intake and exhaust vents?",
+        a: "Intake vents (usually at the soffits) draw in fresh air, while exhaust vents (usually at the ridge) release hot air. Balance between them is key.",
+      },
+      {
+        q: "Will better ventilation lower my energy bills?",
+        a: "Yes. By exhausting trapped heat, proper ventilation reduces cooling costs and eases the load on your HVAC system.",
+      },
+      {
+        q: "Can ventilation prevent ice dams?",
+        a: "Combined with insulation, balanced ventilation keeps the roof deck cold and even, which helps prevent the melting that causes ice dams.",
+      },
+      {
+        q: "Do you add ventilation during a re-roof?",
+        a: "Yes. A roof replacement is the ideal time to correct and upgrade ventilation as part of the complete system.",
+      },
     ],
     related: ["roof-insulation", "roof-inspection", "roof-replacement"],
   },
@@ -797,8 +1226,14 @@ export const services: ServiceItem[] = [
       "We install architectural metal roofing with concealed fasteners, precise flashing and reflective finishes that cut cooling costs and elevate your home's appearance for decades.",
     ],
     benefits: [
-      { title: "50+ year lifespan", desc: "Far outlasts asphalt — often a once-in-a-lifetime roof." },
-      { title: "Energy efficient", desc: "Reflective finishes reduce attic heat and cooling bills." },
+      {
+        title: "50+ year lifespan",
+        desc: "Far outlasts asphalt — often a once-in-a-lifetime roof.",
+      },
+      {
+        title: "Energy efficient",
+        desc: "Reflective finishes reduce attic heat and cooling bills.",
+      },
       { title: "Weather & fire resistant", desc: "Stands up to wind, hail, fire and heavy snow." },
       { title: "Low maintenance", desc: "Resists rot, insects and cracking with minimal upkeep." },
       { title: "Striking curb appeal", desc: "Clean, modern lines that boost home value." },
@@ -810,12 +1245,30 @@ export const services: ServiceItem[] = [
       { title: "Final walkthrough", desc: "Cleanup, inspection and a quality review with you." },
     ],
     faqs: [
-      { q: "How long does a metal roof last?", a: "A quality metal roof commonly lasts 50 years or more — often two to three times the lifespan of asphalt shingles." },
-      { q: "Is a metal roof noisy when it rains?", a: "No. Installed over solid decking and underlayment, a modern metal roof is no louder than other roofing materials." },
-      { q: "Is metal roofing energy efficient?", a: "Yes. Reflective metal finishes bounce away solar heat, reducing attic temperatures and lowering cooling costs." },
-      { q: "Does metal roofing cost more than shingles?", a: "Metal has a higher upfront cost but a much longer lifespan and lower maintenance, making it an excellent long-term value." },
-      { q: "Will a metal roof rust?", a: "Modern metal roofing uses coated steel or aluminum engineered to resist corrosion for decades." },
-      { q: "Can metal roofing handle snow and hail?", a: "Yes. Metal sheds snow easily and is highly resistant to hail and wind, making it ideal for harsh climates." },
+      {
+        q: "How long does a metal roof last?",
+        a: "A quality metal roof commonly lasts 50 years or more — often two to three times the lifespan of asphalt shingles.",
+      },
+      {
+        q: "Is a metal roof noisy when it rains?",
+        a: "No. Installed over solid decking and underlayment, a modern metal roof is no louder than other roofing materials.",
+      },
+      {
+        q: "Is metal roofing energy efficient?",
+        a: "Yes. Reflective metal finishes bounce away solar heat, reducing attic temperatures and lowering cooling costs.",
+      },
+      {
+        q: "Does metal roofing cost more than shingles?",
+        a: "Metal has a higher upfront cost but a much longer lifespan and lower maintenance, making it an excellent long-term value.",
+      },
+      {
+        q: "Will a metal roof rust?",
+        a: "Modern metal roofing uses coated steel or aluminum engineered to resist corrosion for decades.",
+      },
+      {
+        q: "Can metal roofing handle snow and hail?",
+        a: "Yes. Metal sheds snow easily and is highly resistant to hail and wind, making it ideal for harsh climates.",
+      },
     ],
     related: ["roof-replacement", "residential-roofing", "roofing"],
   },
@@ -840,8 +1293,14 @@ export const services: ServiceItem[] = [
       "Whether you need a handful of shingles replaced after a storm or a complete new roof, our certified crews treat your home with respect, protect your property, and leave it cleaner than we found it.",
     ],
     benefits: [
-      { title: "Whole-home expertise", desc: "Roofing, ventilation and flashing handled as one system." },
-      { title: "Premium materials", desc: "Architectural shingle, metal and flat options for any home." },
+      {
+        title: "Whole-home expertise",
+        desc: "Roofing, ventilation and flashing handled as one system.",
+      },
+      {
+        title: "Premium materials",
+        desc: "Architectural shingle, metal and flat options for any home.",
+      },
       { title: "Boosts home value", desc: "A quality roof improves curb appeal and resale value." },
       { title: "Respectful crews", desc: "Property protection and thorough cleanup on every job." },
       { title: "Written warranty", desc: "Workmanship and full manufacturer material coverage." },
@@ -853,12 +1312,30 @@ export const services: ServiceItem[] = [
       { title: "Final walkthrough", desc: "Nail sweep, cleanup and a complete review with you." },
     ],
     faqs: [
-      { q: "How do I know if I need a repair or a full replacement?", a: "It depends on your roof's age, the extent of damage and the decking condition. Our free inspection gives you an honest recommendation with no pressure." },
-      { q: "What roofing material is best for my home?", a: "Architectural shingles suit most homes, while metal offers maximum longevity and flat systems fit modern designs. We'll help you choose based on your goals and budget." },
-      { q: "How long does a residential roof replacement take?", a: "Most homes are completed in a single day, with larger or complex roofs taking a bit longer. We provide a clear timeline up front." },
-      { q: "Do you offer financing?", a: "Yes. We offer flexible monthly payment plans with competitive rates and fast approval, often with no money down." },
-      { q: "Are you licensed and insured?", a: "Absolutely. We are fully licensed and insured for your complete protection on every residential project." },
-      { q: "Will you help with my insurance claim?", a: "Yes. We document storm damage and support your insurance claim from inspection through restoration." },
+      {
+        q: "How do I know if I need a repair or a full replacement?",
+        a: "It depends on your roof's age, the extent of damage and the decking condition. Our free inspection gives you an honest recommendation with no pressure.",
+      },
+      {
+        q: "What roofing material is best for my home?",
+        a: "Architectural shingles suit most homes, while metal offers maximum longevity and flat systems fit modern designs. We'll help you choose based on your goals and budget.",
+      },
+      {
+        q: "How long does a residential roof replacement take?",
+        a: "Most homes are completed in a single day, with larger or complex roofs taking a bit longer. We provide a clear timeline up front.",
+      },
+      {
+        q: "Do you offer financing?",
+        a: "Yes. We offer flexible monthly payment plans with competitive rates and fast approval, often with no money down.",
+      },
+      {
+        q: "Are you licensed and insured?",
+        a: "Absolutely. We are fully licensed and insured for your complete protection on every residential project.",
+      },
+      {
+        q: "Will you help with my insurance claim?",
+        a: "Yes. We document storm damage and support your insurance claim from inspection through restoration.",
+      },
     ],
     related: ["roof-replacement", "roof-repair", "metal-roofing"],
   },
@@ -883,7 +1360,10 @@ export const services: ServiceItem[] = [
       "We work around your operations to minimize downtime, and we offer proactive maintenance programs that catch small issues before they become costly emergencies.",
     ],
     benefits: [
-      { title: "Built for scale", desc: "Systems engineered for large, low-slope commercial roofs." },
+      {
+        title: "Built for scale",
+        desc: "Systems engineered for large, low-slope commercial roofs.",
+      },
       { title: "Minimal disruption", desc: "We schedule around your business to limit downtime." },
       { title: "Energy savings", desc: "Reflective membranes cut cooling costs on big roofs." },
       { title: "Maintenance plans", desc: "Proactive care that extends roof life and budgets." },
@@ -896,12 +1376,30 @@ export const services: ServiceItem[] = [
       { title: "Inspection & report", desc: "Final review and documentation for your records." },
     ],
     faqs: [
-      { q: "What commercial roof systems do you install?", a: "We install and restore TPO, EPDM, modified-bitumen and metal systems, selecting the best fit for your building and budget." },
-      { q: "Can you work without shutting down my business?", a: "Yes. We phase and schedule work to minimize disruption so your operations keep running during the project." },
-      { q: "Do you offer maintenance programs?", a: "Yes. Our proactive maintenance plans catch small issues early, extending roof life and protecting your budget." },
-      { q: "How long does a commercial roof last?", a: "A professionally installed membrane roof typically lasts 20–30 years with proper drainage and routine maintenance." },
-      { q: "Can you restore rather than replace my roof?", a: "Often, yes. If the deck is sound, a restoration or recover system can extend roof life at lower cost than full replacement." },
-      { q: "Do you provide documentation for property managers?", a: "Absolutely. We provide detailed inspection reports, photos and scope documentation for owners and managers." },
+      {
+        q: "What commercial roof systems do you install?",
+        a: "We install and restore TPO, EPDM, modified-bitumen and metal systems, selecting the best fit for your building and budget.",
+      },
+      {
+        q: "Can you work without shutting down my business?",
+        a: "Yes. We phase and schedule work to minimize disruption so your operations keep running during the project.",
+      },
+      {
+        q: "Do you offer maintenance programs?",
+        a: "Yes. Our proactive maintenance plans catch small issues early, extending roof life and protecting your budget.",
+      },
+      {
+        q: "How long does a commercial roof last?",
+        a: "A professionally installed membrane roof typically lasts 20–30 years with proper drainage and routine maintenance.",
+      },
+      {
+        q: "Can you restore rather than replace my roof?",
+        a: "Often, yes. If the deck is sound, a restoration or recover system can extend roof life at lower cost than full replacement.",
+      },
+      {
+        q: "Do you provide documentation for property managers?",
+        a: "Absolutely. We provide detailed inspection reports, photos and scope documentation for owners and managers.",
+      },
     ],
     related: ["flat-roof-installation", "roof-maintenance", "roof-replacement"],
   },
@@ -939,12 +1437,30 @@ export const services: ServiceItem[] = [
       { title: "Report", desc: "A photo summary of work done and anything to watch." },
     ],
     faqs: [
-      { q: "How often should I maintain my roof?", a: "We recommend at least once a year, plus after major storms, to catch and fix small issues before they grow." },
-      { q: "What does roof maintenance include?", a: "A full inspection, resealing, minor repairs, fastening, and clearing debris from the roof and gutters, followed by a photo report." },
-      { q: "Can maintenance really extend my roof's life?", a: "Yes. Proactive care addresses wear early and can add several years to your roof's usable life." },
-      { q: "Is maintenance required for my warranty?", a: "Many manufacturer warranties require documented maintenance. Our reports help keep your coverage valid." },
-      { q: "Do you offer maintenance plans?", a: "Yes. We offer scheduled maintenance programs so you never have to remember to book a visit." },
-      { q: "Will you tell me if I need a new roof?", a: "We give honest assessments. If maintenance is all you need, that's what we'll recommend — no upselling." },
+      {
+        q: "How often should I maintain my roof?",
+        a: "We recommend at least once a year, plus after major storms, to catch and fix small issues before they grow.",
+      },
+      {
+        q: "What does roof maintenance include?",
+        a: "A full inspection, resealing, minor repairs, fastening, and clearing debris from the roof and gutters, followed by a photo report.",
+      },
+      {
+        q: "Can maintenance really extend my roof's life?",
+        a: "Yes. Proactive care addresses wear early and can add several years to your roof's usable life.",
+      },
+      {
+        q: "Is maintenance required for my warranty?",
+        a: "Many manufacturer warranties require documented maintenance. Our reports help keep your coverage valid.",
+      },
+      {
+        q: "Do you offer maintenance plans?",
+        a: "Yes. We offer scheduled maintenance programs so you never have to remember to book a visit.",
+      },
+      {
+        q: "Will you tell me if I need a new roof?",
+        a: "We give honest assessments. If maintenance is all you need, that's what we'll recommend — no upselling.",
+      },
     ],
     related: ["roof-inspection", "gutter-repair", "roof-repair"],
   },
@@ -969,9 +1485,18 @@ export const services: ServiceItem[] = [
       "We install and replace energy-efficient skylights and sun tunnels with proper curb construction and step flashing, so you enjoy bright, beautiful spaces that stay completely watertight for years.",
     ],
     benefits: [
-      { title: "More natural light", desc: "Brightens dark rooms and reduces daytime lighting needs." },
-      { title: "Watertight install", desc: "Proper flashing and curbing prevent the leaks DIY causes." },
-      { title: "Energy efficient", desc: "Modern low-E glass keeps heat in winter and out in summer." },
+      {
+        title: "More natural light",
+        desc: "Brightens dark rooms and reduces daytime lighting needs.",
+      },
+      {
+        title: "Watertight install",
+        desc: "Proper flashing and curbing prevent the leaks DIY causes.",
+      },
+      {
+        title: "Energy efficient",
+        desc: "Modern low-E glass keeps heat in winter and out in summer.",
+      },
       { title: "Better ventilation", desc: "Venting skylights release rising heat and humidity." },
       { title: "Adds value", desc: "Skylights elevate the look and appeal of your home." },
     ],
@@ -982,12 +1507,30 @@ export const services: ServiceItem[] = [
       { title: "Interior finish", desc: "We finish the shaft and review the work with you." },
     ],
     faqs: [
-      { q: "Do skylights leak?", a: "Properly installed skylights with correct flashing do not leak. Most skylight leaks come from poor installation, which is exactly what our expertise prevents." },
-      { q: "What type of skylight is best?", a: "It depends on the room — fixed skylights maximize light, venting skylights add airflow, and sun tunnels bring light to small or interior spaces. We'll recommend the right fit." },
-      { q: "Are skylights energy efficient?", a: "Modern skylights use low-E, insulated glass that minimizes heat transfer, keeping your home comfortable year-round." },
-      { q: "Can you replace an old, leaking skylight?", a: "Yes. We replace failed skylights and correct the flashing so the new unit stays watertight." },
-      { q: "Will a skylight work with my roof type?", a: "Skylights can be installed on most roof types and pitches. We assess your roof and recommend the best approach." },
-      { q: "How long does installation take?", a: "Most skylight installations are completed in a day, including interior finishing and cleanup." },
+      {
+        q: "Do skylights leak?",
+        a: "Properly installed skylights with correct flashing do not leak. Most skylight leaks come from poor installation, which is exactly what our expertise prevents.",
+      },
+      {
+        q: "What type of skylight is best?",
+        a: "It depends on the room — fixed skylights maximize light, venting skylights add airflow, and sun tunnels bring light to small or interior spaces. We'll recommend the right fit.",
+      },
+      {
+        q: "Are skylights energy efficient?",
+        a: "Modern skylights use low-E, insulated glass that minimizes heat transfer, keeping your home comfortable year-round.",
+      },
+      {
+        q: "Can you replace an old, leaking skylight?",
+        a: "Yes. We replace failed skylights and correct the flashing so the new unit stays watertight.",
+      },
+      {
+        q: "Will a skylight work with my roof type?",
+        a: "Skylights can be installed on most roof types and pitches. We assess your roof and recommend the best approach.",
+      },
+      {
+        q: "How long does installation take?",
+        a: "Most skylight installations are completed in a day, including interior finishing and cleanup.",
+      },
     ],
     related: ["roof-repair", "roof-ventilation", "roofing"],
   },
@@ -1012,25 +1555,61 @@ export const services: ServiceItem[] = [
       "Quality materials don't just last longer; they unlock stronger manufacturer warranties and perform better against sun, wind, hail and snow. Combined with our certified installation, they give you a roof built to protect for decades.",
     ],
     benefits: [
-      { title: "Top-rated brands", desc: "We install trusted, industry-leading manufacturer products." },
-      { title: "Stronger warranties", desc: "Premium materials unlock the best manufacturer coverage." },
+      {
+        title: "Top-rated brands",
+        desc: "We install trusted, industry-leading manufacturer products.",
+      },
+      {
+        title: "Stronger warranties",
+        desc: "Premium materials unlock the best manufacturer coverage.",
+      },
       { title: "Built to last", desc: "Engineered to resist sun, wind, hail and heavy snow." },
-      { title: "Better performance", desc: "Quality underlayment and flashing prevent leaks at the source." },
-      { title: "Lasting value", desc: "Durable materials mean fewer repairs and a longer roof life." },
+      {
+        title: "Better performance",
+        desc: "Quality underlayment and flashing prevent leaks at the source.",
+      },
+      {
+        title: "Lasting value",
+        desc: "Durable materials mean fewer repairs and a longer roof life.",
+      },
     ],
     process: [
       { title: "Material consult", desc: "We explain the options and recommend the best fit." },
-      { title: "Transparent specs", desc: "Every material and warranty is spelled out in writing." },
+      {
+        title: "Transparent specs",
+        desc: "Every material and warranty is spelled out in writing.",
+      },
       { title: "Certified install", desc: "Manufacturer-certified crews protect your warranty." },
-      { title: "Warranty registration", desc: "We register your coverage so you're fully protected." },
+      {
+        title: "Warranty registration",
+        desc: "We register your coverage so you're fully protected.",
+      },
     ],
     faqs: [
-      { q: "Why do roofing materials matter so much?", a: "Premium materials last longer, perform better against the elements, and unlock stronger manufacturer warranties than builder-grade products." },
-      { q: "What brands do you install?", a: "We partner with leading, industry-trusted manufacturers and recommend the best products for your home, budget and climate." },
-      { q: "Are better materials worth the extra cost?", a: "Yes. Quality materials reduce repairs, last significantly longer and protect your home more reliably, making them a strong long-term value." },
-      { q: "Do premium materials come with warranties?", a: "Yes. Premium products carry robust manufacturer warranties, and our certified installation keeps that coverage valid." },
-      { q: "What is underlayment and why does it matter?", a: "Underlayment is the water-resistant layer beneath your shingles. High-quality underlayment is a critical second line of defense against leaks." },
-      { q: "Will you tell me which material is right for me?", a: "Absolutely. We assess your home and goals and give honest, no-pressure recommendations on the best materials for you." },
+      {
+        q: "Why do roofing materials matter so much?",
+        a: "Premium materials last longer, perform better against the elements, and unlock stronger manufacturer warranties than builder-grade products.",
+      },
+      {
+        q: "What brands do you install?",
+        a: "We partner with leading, industry-trusted manufacturers and recommend the best products for your home, budget and climate.",
+      },
+      {
+        q: "Are better materials worth the extra cost?",
+        a: "Yes. Quality materials reduce repairs, last significantly longer and protect your home more reliably, making them a strong long-term value.",
+      },
+      {
+        q: "Do premium materials come with warranties?",
+        a: "Yes. Premium products carry robust manufacturer warranties, and our certified installation keeps that coverage valid.",
+      },
+      {
+        q: "What is underlayment and why does it matter?",
+        a: "Underlayment is the water-resistant layer beneath your shingles. High-quality underlayment is a critical second line of defense against leaks.",
+      },
+      {
+        q: "Will you tell me which material is right for me?",
+        a: "Absolutely. We assess your home and goals and give honest, no-pressure recommendations on the best materials for you.",
+      },
     ],
     related: ["roofing", "metal-roofing", "roof-replacement"],
   },
@@ -1157,7 +1736,12 @@ export const cities: City[] = [
       "Mountain Home families trust us for tough, weather-ready roofing and exterior solutions built for high-desert extremes.",
     localNote:
       "Mountain Home's intense sun, wind and temperature swings are hard on roofs. We install heat- and wind-resistant systems engineered to perform in high-desert conditions.",
-    landmarks: ["Downtown Mountain Home", "Air Force Base", "American Legion Blvd", "Optimist Park"],
+    landmarks: [
+      "Downtown Mountain Home",
+      "Air Force Base",
+      "American Legion Blvd",
+      "Optimist Park",
+    ],
   },
 ];
 
