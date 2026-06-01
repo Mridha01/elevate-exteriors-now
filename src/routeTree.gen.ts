@@ -15,6 +15,8 @@ import { Route as ServiceAreasRouteImport } from './routes/service-areas'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ServicesIndexRouteImport } from './routes/services.index'
+import { Route as ServiceAreasIndexRouteImport } from './routes/service-areas.index'
 import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as ServicesSlugRouteImport } from './routes/services.$slug'
 import { Route as ServiceAreasCityRouteImport } from './routes/service-areas.$city'
@@ -50,6 +52,16 @@ const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
+} as any)
+const ServicesIndexRoute = ServicesIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => ServicesRoute,
+} as any)
+const ServiceAreasIndexRoute = ServiceAreasIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => ServiceAreasRoute,
 } as any)
 const BlogIndexRoute = BlogIndexRouteImport.update({
   id: '/blog/',
@@ -88,19 +100,21 @@ export interface FileRoutesByFullPath {
   '/service-areas/$city': typeof ServiceAreasCityRoute
   '/services/$slug': typeof ServicesSlugRoute
   '/blog/': typeof BlogIndexRoute
+  '/service-areas/': typeof ServiceAreasIndexRoute
+  '/services/': typeof ServicesIndexRoute
   '/blog/category/$category': typeof BlogCategoryCategoryRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
-  '/service-areas': typeof ServiceAreasRouteWithChildren
-  '/services': typeof ServicesRouteWithChildren
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/service-areas/$city': typeof ServiceAreasCityRoute
   '/services/$slug': typeof ServicesSlugRoute
   '/blog': typeof BlogIndexRoute
+  '/service-areas': typeof ServiceAreasIndexRoute
+  '/services': typeof ServicesIndexRoute
   '/blog/category/$category': typeof BlogCategoryCategoryRoute
 }
 export interface FileRoutesById {
@@ -115,6 +129,8 @@ export interface FileRoutesById {
   '/service-areas/$city': typeof ServiceAreasCityRoute
   '/services/$slug': typeof ServicesSlugRoute
   '/blog/': typeof BlogIndexRoute
+  '/service-areas/': typeof ServiceAreasIndexRoute
+  '/services/': typeof ServicesIndexRoute
   '/blog/category/$category': typeof BlogCategoryCategoryRoute
 }
 export interface FileRouteTypes {
@@ -130,19 +146,21 @@ export interface FileRouteTypes {
     | '/service-areas/$city'
     | '/services/$slug'
     | '/blog/'
+    | '/service-areas/'
+    | '/services/'
     | '/blog/category/$category'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/about'
     | '/contact'
-    | '/service-areas'
-    | '/services'
     | '/sitemap.xml'
     | '/blog/$slug'
     | '/service-areas/$city'
     | '/services/$slug'
     | '/blog'
+    | '/service-areas'
+    | '/services'
     | '/blog/category/$category'
   id:
     | '__root__'
@@ -156,6 +174,8 @@ export interface FileRouteTypes {
     | '/service-areas/$city'
     | '/services/$slug'
     | '/blog/'
+    | '/service-areas/'
+    | '/services/'
     | '/blog/category/$category'
   fileRoutesById: FileRoutesById
 }
@@ -215,6 +235,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/services/': {
+      id: '/services/'
+      path: '/'
+      fullPath: '/services/'
+      preLoaderRoute: typeof ServicesIndexRouteImport
+      parentRoute: typeof ServicesRoute
+    }
+    '/service-areas/': {
+      id: '/service-areas/'
+      path: '/'
+      fullPath: '/service-areas/'
+      preLoaderRoute: typeof ServiceAreasIndexRouteImport
+      parentRoute: typeof ServiceAreasRoute
+    }
     '/blog/': {
       id: '/blog/'
       path: '/blog'
@@ -255,10 +289,12 @@ declare module '@tanstack/react-router' {
 
 interface ServiceAreasRouteChildren {
   ServiceAreasCityRoute: typeof ServiceAreasCityRoute
+  ServiceAreasIndexRoute: typeof ServiceAreasIndexRoute
 }
 
 const ServiceAreasRouteChildren: ServiceAreasRouteChildren = {
   ServiceAreasCityRoute: ServiceAreasCityRoute,
+  ServiceAreasIndexRoute: ServiceAreasIndexRoute,
 }
 
 const ServiceAreasRouteWithChildren = ServiceAreasRoute._addFileChildren(
@@ -267,10 +303,12 @@ const ServiceAreasRouteWithChildren = ServiceAreasRoute._addFileChildren(
 
 interface ServicesRouteChildren {
   ServicesSlugRoute: typeof ServicesSlugRoute
+  ServicesIndexRoute: typeof ServicesIndexRoute
 }
 
 const ServicesRouteChildren: ServicesRouteChildren = {
   ServicesSlugRoute: ServicesSlugRoute,
+  ServicesIndexRoute: ServicesIndexRoute,
 }
 
 const ServicesRouteWithChildren = ServicesRoute._addFileChildren(
