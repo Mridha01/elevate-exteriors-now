@@ -10,6 +10,17 @@ import {
   CloudLightning,
   PanelTop,
   Siren,
+  Search,
+  LayoutPanelTop,
+  Thermometer,
+  ClipboardCheck,
+  Wind,
+  SquareStack,
+  House,
+  Building2,
+  CalendarCheck,
+  Sun,
+  Gem,
   type LucideIcon,
 } from "lucide-react";
 
