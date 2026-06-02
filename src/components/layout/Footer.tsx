@@ -144,7 +144,7 @@ export function Footer() {
             <p>
               © {year} {company.legal}. All rights reserved.
             </p>
-            <p>Licensed &amp; Insured · Workmanship Warranty · Financing Available</p>
+            <p>Licensed &amp; Insured · Workmanship Warranty · Free Estimates · Financing Available</p>
           </div>
         </div>
       </div>
