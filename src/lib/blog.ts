@@ -15,13 +15,13 @@ export const authors: Record<string, BlogAuthor> = {
   team: {
     name: "Precision Roofing Team",
     role: "Roofing & Exterior Specialists",
-    bio: "Our team brings 25+ years of combined roofing, siding and exterior experience across the Treasure Valley, sharing practical advice to help homeowners protect their biggest investment.",
+    bio: "Our team brings 25+ years of combined roofing, siding and exterior experience across the greater Memphis area, sharing practical advice to help homeowners protect their biggest investment.",
     initials: "PR",
   },
   marcus: {
     name: "Marcus Hale",
     role: "Lead Project Estimator",
-    bio: "Marcus has inspected thousands of roofs across Idaho and specializes in storm-damage assessment and insurance claims, helping homeowners make confident, informed decisions.",
+    bio: "Marcus has inspected thousands of roofs across the Mid-South and specializes in storm-damage assessment and insurance claims, helping homeowners make confident, informed decisions.",
     initials: "MH",
   },
 };
