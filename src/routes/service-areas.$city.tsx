@@ -74,7 +74,7 @@ function cityFaqs(name: string) {
   return [
     {
       q: `Do you offer free estimates in ${name}?`,
-      a: `Yes. We provide free, no-obligation roofing and exterior estimates throughout ${name} and the surrounding Treasure Valley.`,
+      a: `Yes. We provide free, no-obligation roofing and exterior estimates throughout ${name} and the surrounding greater Memphis area.`,
     },
     {
       q: `Are you licensed and insured to work in ${name}?`,
@@ -118,7 +118,7 @@ function getCityWhyReasons(cityName: string) {
   return [
     {
       title: `Deeply Rooted in ${cityName}`,
-      desc: `We know ${cityName} building requirements and weather patterns inside out — from high wind risks to intense UV exposure. Our systems are engineered specifically for Idaho's seasonal extremes.`,
+      desc: `We know ${cityName} building requirements and weather patterns inside out — from severe thunderstorms and high winds to intense summer heat and humidity. Our systems are engineered specifically for the Mid-South's seasonal extremes.`,
     },
     {
       title: "Certified Professional Installation",

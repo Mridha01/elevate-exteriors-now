@@ -11,16 +11,16 @@ import { breadcrumbSchema } from "@/lib/seo";
 export const Route = createFileRoute("/service-areas/")({
   head: () => ({
     meta: [
-      { title: "Service Areas | Roofing & Exteriors Across the Treasure Valley" },
+      { title: "Service Areas | Roofing & Exteriors Across the Memphis Area" },
       {
         name: "description",
         content:
-          "Precision Roofing & Exteriors serves Boise, Meridian, Nampa, Eagle, Caldwell and the greater Treasure Valley with premium roofing, siding and gutters.",
+          "Precision Roofing & Exteriors serves Memphis, Germantown, Collierville, Bartlett, Cordova and the greater Memphis area with premium roofing, siding and gutters.",
       },
       { property: "og:title", content: "Service Areas | Precision Roofing & Exteriors" },
       {
         property: "og:description",
-        content: "Local roofing & exterior experts across the Treasure Valley.",
+        content: "Local roofing & exterior experts across the greater Memphis area.",
       },
       { property: "og:url", content: "/service-areas" },
     ],
@@ -45,8 +45,8 @@ function ServiceAreasPage() {
     <>
       <PageHero
         eyebrow="Service Areas"
-        title="Proudly serving the Treasure Valley"
-        description="Local, responsive and trusted across the region. Choose your city for local roofing and exterior details."
+        title="Proudly serving the greater Memphis area"
+        description="Local, responsive and trusted across the Mid-South. Choose your city for local roofing and exterior details."
         crumb="Service Areas"
       />
 
@@ -81,7 +81,7 @@ function ServiceAreasPage() {
                 Don't see your town?
               </h2>
               <p className="mt-2 text-sm text-muted-foreground">
-                We cover much of the greater Treasure Valley. Give us a call — chances are we serve
+                We cover much of the greater Memphis area. Give us a call — chances are we serve
                 your area.
               </p>
               <Button asChild variant="hero" size="lg" className="mt-4 w-full">

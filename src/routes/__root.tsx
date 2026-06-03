@@ -149,9 +149,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           address: {
             "@type": "PostalAddress",
             streetAddress: "1240 Craftsman Way, Suite 200",
-            addressLocality: "Boise",
-            addressRegion: "ID",
-            postalCode: "83702",
+            addressLocality: "Memphis",
+            addressRegion: "TN",
+            postalCode: "38103",
             addressCountry: "US",
           },
           aggregateRating: {

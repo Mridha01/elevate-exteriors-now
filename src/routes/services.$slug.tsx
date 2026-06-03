@@ -257,7 +257,7 @@ function ServiceDetailPage() {
       <section className="px-6 py-16">
         <div className="mx-auto max-w-7xl rounded-3xl border border-border bg-card p-8 shadow-sm md:p-10">
           <h2 className="font-display text-2xl font-700 text-foreground">
-            {service.localLabel} across the Treasure Valley
+            {service.localLabel} across the greater Memphis area
           </h2>
           <p className="mt-2 max-w-2xl text-muted-foreground">
             We provide {service.title.toLowerCase()} in communities throughout the region. Find

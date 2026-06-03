@@ -11,8 +11,8 @@ export function ServiceAreas() {
           <SectionHeading
             align="left"
             eyebrow="Service Areas"
-            title="Proudly serving the Treasure Valley"
-            description="Local, responsive, and trusted across the region. If you don't see your town listed, give us a call — chances are we cover it."
+            title="Proudly serving the greater Memphis area"
+            description="Local, responsive, and trusted across the Mid-South. If you don't see your town listed, give us a call — chances are we cover it."
           />
           <div className="mt-8 flex flex-wrap gap-2.5">
             {serviceAreas.map((area) => (

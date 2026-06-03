@@ -32,7 +32,7 @@ export const company = {
   phoneHref: "tel:+18447766334",
   email: "info@precisionroofingandexteriors.com",
   address: "1240 Craftsman Way, Suite 200",
-  cityState: "Boise, ID 83702",
+  cityState: "Memphis, TN 38103",
   hours: "Mon–Sat: 7:00 AM – 7:00 PM",
   rating: "4.9",
   reviews: "480+",
@@ -1639,108 +1639,108 @@ export interface City {
 
 export const cities: City[] = [
   {
-    slug: "boise",
-    name: "Boise",
-    state: "ID",
+    slug: "memphis",
+    name: "Memphis",
+    state: "TN",
     intro:
-      "As Boise's trusted roofing and exterior contractor, we protect homes across the City of Trees from intense summer sun, winter snow loads and sudden Treasure Valley storms.",
+      "As Memphis's trusted roofing and exterior contractor, we protect homes across the Bluff City from intense summer heat and humidity, severe thunderstorms, high winds and damaging hail.",
     localNote:
-      "From the North End's historic bungalows to new builds in the Foothills, Boise homes face everything from UV-baked south-facing roofs to ice-dam-prone shaded slopes. We tailor every roof, siding and gutter system to how Boise weather actually behaves.",
-    landmarks: ["North End", "The Bench", "Boise Foothills", "Downtown Boise"],
+      "From historic homes in Midtown and Central Gardens to newer builds in East Memphis, Memphis roofs take a beating from humid heat, wind-driven rain and sudden storms. We tailor every roof, siding and gutter system to how Memphis weather actually behaves.",
+    landmarks: ["Midtown", "East Memphis", "Downtown Memphis", "Central Gardens"],
   },
   {
-    slug: "meridian",
-    name: "Meridian",
-    state: "ID",
+    slug: "germantown",
+    name: "Germantown",
+    state: "TN",
     intro:
-      "Meridian's fast-growing neighborhoods trust Precision Roofing & Exteriors for durable roofing, siding and gutters built for Idaho's seasons.",
+      "Germantown homeowners trust Precision Roofing & Exteriors for premium roofing, siding and gutters that match the area's high standards for curb appeal and quality.",
     localNote:
-      "With so much newer construction across Meridian, we focus on premium materials and proper ventilation that outlast builder-grade installs and stand up to wind, hail and heavy snow.",
-    landmarks: ["The Village at Meridian", "Kuna-Meridian Rd", "Ten Mile", "Eagle Rd corridor"],
+      "Germantown's established neighborhoods and upscale homes demand flawless craftsmanship and premium materials. We specialize in high-end roofing and exterior work that holds up to West Tennessee storms and the neighborhood's standards.",
+    landmarks: ["Old Germantown", "Forest Hill", "Farmington", "Germantown Pkwy"],
   },
   {
-    slug: "nampa",
-    name: "Nampa",
-    state: "ID",
+    slug: "collierville",
+    name: "Collierville",
+    state: "TN",
     intro:
-      "Nampa homeowners count on us for honest, high-quality roofing and exterior work that protects their homes and their budgets.",
+      "In Collierville, where curb appeal matters, we deliver premium roofing, siding and exterior solutions that protect and elevate distinctive homes.",
     localNote:
-      "From established neighborhoods to growing subdivisions, Nampa homes need roofing and gutter systems that handle wind-driven rain and seasonal storms. We deliver lasting protection with transparent pricing.",
-    landmarks: ["Downtown Nampa", "Lake Lowell", "Karcher", "Midland"],
+      "Collierville's larger homes and custom builds need premium materials and proper ventilation to handle humid summers and severe storms. We deliver high-end roofing and exterior work built to last.",
+    landmarks: ["Town Square", "Schilling Farms", "Bailey Station", "Poplar Ave"],
   },
   {
-    slug: "eagle",
-    name: "Eagle",
-    state: "ID",
+    slug: "bartlett",
+    name: "Bartlett",
+    state: "TN",
     intro:
-      "In Eagle, where curb appeal matters, we deliver premium roofing, siding and exterior solutions that protect and elevate distinctive homes.",
+      "Bartlett families trust Precision Roofing & Exteriors for dependable roofing, gutters and siding backed by a written warranty.",
     localNote:
-      "Eagle's larger homes and custom builds demand premium materials and flawless craftsmanship. We specialize in high-end roofing and exterior work that holds up to the elements and the neighborhood's standards.",
-    landmarks: ["Eagle Island", "Downtown Eagle", "Eagle Foothills", "BanBury"],
+      "Bartlett's mix of established and newer homes benefits from our tailored approach — matching materials and methods to each home's age and exposure for long-lasting protection against wind and hail.",
+    landmarks: ["Stage Rd", "Bartlett Station", "Elmore Park", "Old Brownsville Rd"],
   },
   {
-    slug: "caldwell",
-    name: "Caldwell",
-    state: "ID",
+    slug: "cordova",
+    name: "Cordova",
+    state: "TN",
     intro:
-      "Caldwell families trust Precision Roofing & Exteriors for dependable roofing, gutters and siding backed by a written warranty.",
+      "Cordova homeowners count on us for honest, high-quality roofing and exterior work that protects their homes and their budgets.",
     localNote:
-      "Caldwell's mix of historic and newer homes benefits from our tailored approach — matching materials and methods to each home's age and exposure for long-lasting protection.",
-    landmarks: ["Downtown Caldwell", "Indian Creek", "Sunnyslope", "College of Idaho"],
+      "From established subdivisions to growing neighborhoods, Cordova homes need roofing and gutter systems that handle wind-driven rain, hail and seasonal storms. We deliver lasting protection with transparent pricing.",
+    landmarks: ["Germantown Pkwy", "Macon Rd", "Countrywood", "Dexter Rd"],
   },
   {
-    slug: "kuna",
-    name: "Kuna",
-    state: "ID",
+    slug: "arlington",
+    name: "Arlington",
+    state: "TN",
     intro:
-      "Kuna homeowners rely on us for storm-ready roofing and exterior systems built to handle wide-open, wind-exposed conditions.",
+      "Arlington homeowners rely on us for storm-ready roofing and exterior systems built to handle West Tennessee's severe weather.",
     localNote:
-      "Kuna's open landscape means homes catch more wind and weather. We install wind-rated roofing and securely fastened gutter systems engineered for exposed sites.",
-    landmarks: ["Downtown Kuna", "Kuna Caves", "Swan Falls Rd", "Indian Creek"],
+      "Arlington's growing developments deserve better-than-builder-grade materials. We install wind-rated roofing and securely fastened gutter systems engineered for storm-prone conditions.",
+    landmarks: ["Depot Square", "Donelson Farms", "Airline Rd", "Milton Wilson Rd"],
   },
   {
-    slug: "star",
-    name: "Star",
-    state: "ID",
+    slug: "lakeland",
+    name: "Lakeland",
+    state: "TN",
     intro:
-      "As Star continues to grow, homeowners choose Precision for premium roofing and exterior work that protects their investment.",
+      "As Lakeland continues to grow, homeowners choose Precision for premium roofing and exterior work that protects their investment.",
     localNote:
-      "Star's newer developments deserve better-than-builder-grade materials. We focus on premium roofing systems and proper installation that add lasting value and protection.",
-    landmarks: ["Downtown Star", "State St corridor", "Floating Feather", "Can-Ada Rd"],
+      "Lakeland's newer developments deserve premium roofing systems and proper installation that add lasting value and stand up to high winds, hail and humid heat.",
+    landmarks: ["Canada Rd", "Garner Lake", "Oakwood", "Davies Plantation"],
   },
   {
-    slug: "garden-city",
-    name: "Garden City",
-    state: "ID",
+    slug: "millington",
+    name: "Millington",
+    state: "TN",
     intro:
-      "Garden City property owners trust us for practical, durable roofing, siding and gutter solutions for homes and commercial buildings.",
+      "Millington property owners trust us for practical, durable roofing, siding and gutter solutions for homes and commercial buildings.",
     localNote:
-      "With a mix of residential and commercial properties along the river, Garden City benefits from our full-service expertise across both residential roofing and flat commercial systems.",
-    landmarks: ["Boise River Greenbelt", "Chinden Blvd", "Expo Idaho", "Riverside"],
+      "With a mix of residential and commercial properties, Millington benefits from our full-service expertise across both residential roofing and flat commercial systems built for storm-prone conditions.",
+    landmarks: ["Navy Rd", "Downtown Millington", "Big Creek", "Singleton Pkwy"],
   },
   {
-    slug: "middleton",
-    name: "Middleton",
-    state: "ID",
+    slug: "southaven",
+    name: "Southaven",
+    state: "MS",
     intro:
-      "Middleton homeowners choose Precision Roofing & Exteriors for honest, high-quality work that stands up to Idaho's seasons.",
+      "Southaven homeowners choose Precision Roofing & Exteriors for honest, high-quality work that stands up to the Mid-South's storms.",
     localNote:
-      "Middleton's rural and residential properties need rugged, low-maintenance exterior systems. We deliver durable roofing and gutters designed for long-term, hands-off protection.",
-    landmarks: ["Downtown Middleton", "Foothill Rd", "Willow Creek", "Cemetery Rd"],
+      "Southaven's fast-growing residential neighborhoods need rugged, storm-ready exterior systems. We deliver durable roofing and gutters engineered for high winds, hail and heavy rain just across the state line.",
+    landmarks: ["Snowden Grove", "Silo Square", "Stateline Rd", "Goodman Rd"],
   },
   {
-    slug: "mountain-home",
-    name: "Mountain Home",
-    state: "ID",
+    slug: "olive-branch",
+    name: "Olive Branch",
+    state: "MS",
     intro:
-      "Mountain Home families trust us for tough, weather-ready roofing and exterior solutions built for high-desert extremes.",
+      "Olive Branch families trust us for tough, weather-ready roofing and exterior solutions built for Mid-South storms.",
     localNote:
-      "Mountain Home's intense sun, wind and temperature swings are hard on roofs. We install heat- and wind-resistant systems engineered to perform in high-desert conditions.",
+      "Olive Branch's intense summer heat, humidity and severe storms are hard on roofs. We install heat- and wind-resistant systems engineered to perform through every season in the DeSoto County area.",
     landmarks: [
-      "Downtown Mountain Home",
-      "Air Force Base",
-      "American Legion Blvd",
-      "Optimist Park",
+      "Olive Branch Square",
+      "Goodman Rd",
+      "Cherokee Valley",
+      "Wedgewood",
     ],
   },
 ];

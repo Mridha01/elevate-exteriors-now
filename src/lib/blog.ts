@@ -15,13 +15,13 @@ export const authors: Record<string, BlogAuthor> = {
   team: {
     name: "Precision Roofing Team",
     role: "Roofing & Exterior Specialists",
-    bio: "Our team brings 25+ years of combined roofing, siding and exterior experience across the Treasure Valley, sharing practical advice to help homeowners protect their biggest investment.",
+    bio: "Our team brings 25+ years of combined roofing, siding and exterior experience across the greater Memphis area, sharing practical advice to help homeowners protect their biggest investment.",
     initials: "PR",
   },
   marcus: {
     name: "Marcus Hale",
     role: "Lead Project Estimator",
-    bio: "Marcus has inspected thousands of roofs across Idaho and specializes in storm-damage assessment and insurance claims, helping homeowners make confident, informed decisions.",
+    bio: "Marcus has inspected thousands of roofs across the Mid-South and specializes in storm-damage assessment and insurance claims, helping homeowners make confident, informed decisions.",
     initials: "MH",
   },
 };
@@ -267,7 +267,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "gutter-maintenance-guide",
-    title: "The Complete Gutter Maintenance Guide for Idaho Homes",
+    title: "The Complete Gutter Maintenance Guide for Memphis Homes",
     excerpt:
       "Why clogged gutters cause expensive foundation damage — and a simple seasonal routine to keep water flowing where it belongs.",
     category: "maintenance",
@@ -378,7 +378,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "winter-roof-preparation",
-    title: "How to Prepare Your Roof for Winter in the Treasure Valley",
+    title: "How to Prepare Your Roof for Storm Season in the Memphis Area",
     excerpt:
       "Ice dams, snow loads and freeze-thaw cycles are hard on roofs. Here's how to get yours winter-ready before the first big storm.",
     category: "maintenance",
@@ -388,7 +388,7 @@ export const blogPosts: BlogPost[] = [
     image: beforeImg,
     imageAlt: "Roof being inspected before winter weather arrives",
     intro:
-      "Idaho winters test every roof with snow loads, ice dams and freeze-thaw cycles. A little preparation each fall prevents leaks, ice damage and emergency repairs when temperatures drop.",
+      "Mid-South storm seasons test every roof with high winds, hail and heavy rain. A little preparation each season prevents leaks, storm damage and emergency repairs when severe weather hits.",
     sections: [
       {
         id: "inspect",

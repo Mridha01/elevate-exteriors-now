@@ -33,7 +33,7 @@ function AboutPage() {
       <PageHero
         eyebrow="About Us"
         title="Built on precision, trust & craftsmanship"
-        description="Two decades of protecting homes across the Treasure Valley with quality you can see and service you can trust."
+        description="Two decades of protecting homes across the greater Memphis area with quality you can see and service you can trust."
         crumb="About"
       />
       <AboutSection />
