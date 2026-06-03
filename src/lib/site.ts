@@ -32,7 +32,7 @@ export const company = {
   phoneHref: "tel:+18447766334",
   email: "info@precisionroofingandexteriors.com",
   address: "1240 Craftsman Way, Suite 200",
-  cityState: "Boise, ID 83702",
+  cityState: "Memphis, TN 38103",
   hours: "Mon–Sat: 7:00 AM – 7:00 PM",
   rating: "4.9",
   reviews: "480+",

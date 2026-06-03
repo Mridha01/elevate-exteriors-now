@@ -46,7 +46,7 @@ export function serviceSchema(opts: {
     name: opts.name,
     description: opts.description,
     url: `${siteUrl}${opts.path}`,
-    areaServed: opts.areaServed ?? "Treasure Valley, Idaho",
+    areaServed: opts.areaServed ?? "Memphis, Tennessee",
     provider: {
       "@type": "RoofingContractor",
       name: company.legal,

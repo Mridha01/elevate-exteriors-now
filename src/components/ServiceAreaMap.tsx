@@ -23,7 +23,7 @@ export function ServiceAreaMap({ query, className }: ServiceAreaMapProps) {
       </div>
       <p className="mt-3 flex items-center gap-2 text-sm text-muted-foreground">
         <MapPin className="size-4 text-primary" />
-        Proudly serving {query ? `${query} and` : ""} the greater Treasure Valley.
+        Proudly serving {query ? `${query} and` : ""} the greater Memphis area.
       </p>
     </div>
   );
