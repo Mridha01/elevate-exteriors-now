@@ -5,25 +5,25 @@ import { SectionHeading } from "@/components/SectionHeading";
 const reviews = [
   {
     name: "Sarah M.",
-    location: "Meridian, ID",
+    location: "Germantown, TN",
     initials: "SM",
     text: "Precision replaced our entire roof in a single day. The crew was professional, tidy, and the new roof looks incredible. Couldn't be happier.",
   },
   {
     name: "David R.",
-    location: "Boise, ID",
+    location: "Memphis, TN",
     initials: "DR",
     text: "After a hailstorm they handled my insurance claim start to finish. They got far more approved than I expected and the work is flawless.",
   },
   {
     name: "Jennifer L.",
-    location: "Eagle, ID",
+    location: "Collierville, TN",
     initials: "JL",
     text: "New siding and gutters transformed our home's curb appeal. Honest pricing, great communication, and zero mess left behind.",
   },
   {
     name: "Michael T.",
-    location: "Nampa, ID",
+    location: "Bartlett, TN",
     initials: "MT",
     text: "Financing made it easy to get the premium roof we wanted. The team explained every option clearly. Highly recommend Precision.",
   },
